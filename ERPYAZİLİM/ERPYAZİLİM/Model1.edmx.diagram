@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1d156ae54d07458d9d2fc56c15090124" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="8.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLADMIN" Width="1.5" PointX="8.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLARACLAR" Width="1.5" PointX="7.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLARIZADETAY" Width="1.5" PointX="9.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLCARI" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLDEPARTMAN" Width="1.5" PointX="1.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLFATURABILGI" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLFATURADETAY" Width="1.5" PointX="5.25" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLGIDER" Width="1.5" PointX="10.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLHAKKIMIZDA" Width="1.5" PointX="10.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLILCELER" Width="1.5" PointX="8" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLILETISIM" Width="1.5" PointX="10.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLILLER" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLKATEGORI" Width="1.5" PointX="1.5" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLNOTLARIM" Width="1.5" PointX="11.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLPERSONEL" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLURUN" Width="1.5" PointX="3.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLURUNHAREKET" Width="1.5" PointX="6" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLURUNKABUL" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.TBLURUNTAKIP" Width="1.5" PointX="12.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_TBLFATURABILGI_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLURUNHAREKET_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLURUNKABUL_TBLCARI" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLPERSONEL_TBLDEPARTMAN" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLFATURABILGI_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLFATURADETAY_TBLFATURABILGI" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLILCELER_TBLILLER" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLURUN_TBLKATEGORI" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLURUNHAREKET_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLURUNKABUL_TBLPERSONEL" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLURUNHAREKET_TBLURUN" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_TBLURUNHAREKET_TBLURUN1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.YETKİLENDİRME" Width="1.5" PointX="13.375" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
