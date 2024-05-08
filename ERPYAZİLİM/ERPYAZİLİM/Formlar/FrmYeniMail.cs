@@ -67,9 +67,9 @@ namespace ERPYAZİLİM.Formlar
                string Konu = TxtKonu.Text;
                string İcerik = Txtİcerik.Text;
 
-               sc.Credentials = new NetworkCredential("erpyazilim3@gmail.com", "erpyazilim1234");
+               sc.Credentials = new NetworkCredential("erpyazilim3@gmail.com", "vrpfmholjcivdxqt");
                MailMessage mail = new MailMessage();
-               mail.From = new MailAddress("erpyazilim3@gmail.com", " SELAMUN ALEYKÜM ");
+               mail.From = new MailAddress("erpyazilim3@gmail.com", " ERP YAZİLİM TİCARİ OTOMASYON ");
                mail.To.Add(Alici);
                mail.Subject = Konu;
                mail.IsBodyHtml = true;

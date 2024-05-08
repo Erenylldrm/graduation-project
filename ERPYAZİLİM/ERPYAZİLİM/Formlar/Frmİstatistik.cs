@@ -51,6 +51,13 @@ namespace ERPYAZİLİM.Formlar
             label40.Text = db.TBLURUN.Count(x => x.KATEGORI == 3).ToString();
 
             //8,10,20,24,28,30,32,34
+            label24.Text = db.TBLURUN
+                .GroupBy(x => x.MARKA)
+                .OrderByDescending(g => g.Count())
+                .Select(g => g.Key)
+                .FirstOrDefault();
+           
+
         }
 
         private void label37_Click(object sender, EventArgs e)

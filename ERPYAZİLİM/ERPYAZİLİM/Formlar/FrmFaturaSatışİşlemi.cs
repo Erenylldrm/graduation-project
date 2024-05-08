@@ -40,6 +40,59 @@ namespace ERPYAZİLİM.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(TxtUrun.Text) || string.IsNullOrWhiteSpace(TxtAdet.Text) || string.IsNullOrWhiteSpace(TxtFiyat.Text) || string.IsNullOrWhiteSpace(TxtTutar.Text) || string.IsNullOrWhiteSpace(TxtFatura.Text))
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            short adet;
+            if (!short.TryParse(TxtAdet.Text, out adet) || adet <= 0)
+            {
+                MessageBox.Show("Geçerli bir adet giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            decimal fiyat;
+            if (!decimal.TryParse(TxtFiyat.Text, out fiyat) || fiyat <= 0)
+            {
+                MessageBox.Show("Geçerli bir fiyat giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            decimal tutar;
+            if (!decimal.TryParse(TxtTutar.Text, out tutar) || tutar <= 0)
+            {
+                MessageBox.Show("Geçerli bir tutar giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int faturaId;
+            if (!int.TryParse(TxtFatura.Text, out faturaId) || faturaId <= 0)
+            {
+                MessageBox.Show("Geçerli bir fatura ID giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                TBLFATURADETAY detay = new TBLFATURADETAY();
+                detay.URUN = TxtUrun.Text;
+                detay.ADET = adet;
+                detay.FIYAT = fiyat;
+                detay.TUTAR = tutar;
+                detay.FATURAID = faturaId;
+
+                db.TBLFATURADETAY.Add(detay);
+                db.SaveChanges();
+                MessageBox.Show("Faturaya ait kalem girişi başarı ile yapıldı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        /*{
             TBLFATURADETAY detay = new TBLFATURADETAY();
             detay.URUN = TxtUrun.Text;
             detay.ADET = short.Parse(TxtAdet.Text);
@@ -50,7 +103,7 @@ namespace ERPYAZİLİM.Formlar
             db.TBLFATURADETAY.Add(detay);
             db.SaveChanges();
             MessageBox.Show("Faturaya ait kalem girişi başarı ile yapıldı.");
-        }
+        }*/
 
         private void BtnListele_Click(object sender, EventArgs e)
         {

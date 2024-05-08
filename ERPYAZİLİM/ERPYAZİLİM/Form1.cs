@@ -15,14 +15,18 @@ namespace ERPYAZİLİM
         public Form1()
         {
             InitializeComponent();
+            this.Text = "";
+
         }
+
+
         private void TumFormlariKapat()
         {
             List<Form> kopyaFormlar = new List<Form>(Application.OpenForms.Cast<Form>());
 
             foreach (Form acikForm in kopyaFormlar)
             {
-                if (acikForm.GetType() != typeof(Form1) && acikForm.GetType() != typeof(FrmLogin)) // Login formunu ve Form1'i kapatma
+                if (acikForm.GetType() != typeof(Form1) && acikForm.GetType() != typeof(FrmLogin1)) // Login formunu ve Form1'i kapatma
                 {
                     acikForm.Close();
                 }
@@ -73,14 +77,14 @@ namespace ERPYAZİLİM
             }
 
             //TumFormlariKapat();
-            FormAc(new Formlar.FrmAnaSayfa());
+            FormAc(new Formlar.FrmAnasayfaa());
 
         }
 
         private void BtnAnaForm_ItemClick(object sender, EventArgs e)
         {
             TumFormlariKapat();
-            FormAc(new Formlar.FrmAnaSayfa());
+            FormAc(new Formlar.FrmAnasayfaa());
             
        
         }
@@ -97,7 +101,7 @@ namespace ERPYAZİLİM
         private void FrmAnaSayfa_Click(object sender, EventArgs e)
         {
             TumFormlariKapat();
-            FormAc(new Formlar.FrmAnaSayfa());
+            FormAc(new Formlar.FrmAnasayfaa());
          
         }
 
@@ -225,6 +229,29 @@ namespace ERPYAZİLİM
         {
             TumFormlariKapat();
             FormAc(new Formlar.FrmBarcode());
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

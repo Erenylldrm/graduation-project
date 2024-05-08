@@ -165,6 +165,30 @@ namespace ERPYAZİLİM.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(TxtAd.Text) || string.IsNullOrWhiteSpace(TxtSoyad.Text) || string.IsNullOrWhiteSpace(TxtMail.Text) || string.IsNullOrWhiteSpace(TxtTelefon.Text) || comboBox1.SelectedItem == null)
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                TBLPERSONEL t = new TBLPERSONEL();
+                t.AD = TxtAd.Text;
+                t.SOYAD = TxtSoyad.Text;
+                t.DEPARTMAN = Convert.ToByte(comboBox1.SelectedValue);
+                t.MAIL = TxtMail.Text;
+                t.TELEFON = TxtTelefon.Text;
+                db.TBLPERSONEL.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Personel sisteme eklendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        /*{
             TBLPERSONEL t = new TBLPERSONEL();
             t.AD = TxtAd.Text;
             t.SOYAD = TxtSoyad.Text;
@@ -174,7 +198,7 @@ namespace ERPYAZİLİM.Formlar
             db.TBLPERSONEL.Add(t);
             db.SaveChanges();
             MessageBox.Show("Personel sisteme eklendi.");
-        }
+        }*/
 
         private void BtnSil_Click(object sender, EventArgs e)
         {
@@ -208,6 +232,42 @@ namespace ERPYAZİLİM.Formlar
 
         private void BtnGüncelle_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(TxtID.Text) || string.IsNullOrWhiteSpace(TxtAd.Text) || string.IsNullOrWhiteSpace(TxtSoyad.Text) || string.IsNullOrWhiteSpace(TxtMail.Text) || string.IsNullOrWhiteSpace(TxtTelefon.Text) || comboBox1.SelectedItem == null)
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                int id;
+                if (!int.TryParse(TxtID.Text, out id))
+                {
+                    MessageBox.Show("Geçerli bir personel ID giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                var deger = db.TBLPERSONEL.Find(id);
+                if (deger == null)
+                {
+                    MessageBox.Show("Belirtilen ID'ye sahip personel bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                deger.AD = TxtAd.Text;
+                deger.SOYAD = TxtSoyad.Text;
+                deger.DEPARTMAN = Convert.ToByte(comboBox1.SelectedValue);
+                deger.MAIL = TxtMail.Text;
+                deger.TELEFON = TxtTelefon.Text;
+                db.SaveChanges();
+                MessageBox.Show("Personel başarıyla güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        /*{
             try
             {
                 int id = int.Parse(TxtID.Text);
@@ -224,7 +284,7 @@ namespace ERPYAZİLİM.Formlar
             {
                 MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        }*/
 
         private void BtnListele_Click(object sender, EventArgs e)
         {

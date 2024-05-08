@@ -60,6 +60,8 @@ namespace ERPYAZİLİM
             this.BtnFaturaListesi = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel13 = new System.Windows.Forms.RibbonPanel();
             this.BtnFaturaSatışİşlemi = new System.Windows.Forms.RibbonButton();
+            this.ribbonPanel14 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
             this.ribbonTab5 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel15 = new System.Windows.Forms.RibbonPanel();
             this.BtnPersonelListesi = new System.Windows.Forms.RibbonButton();
@@ -75,8 +77,9 @@ namespace ERPYAZİLİM
             this.ribbonTab6 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel11 = new System.Windows.Forms.RibbonPanel();
             this.BtnAjanda = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel14 = new System.Windows.Forms.RibbonPanel();
-            this.ribbonButton2 = new System.Windows.Forms.RibbonButton();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ribbon1
@@ -333,6 +336,21 @@ namespace ERPYAZİLİM
             this.BtnFaturaSatışİşlemi.Text = "Fatura Satış İşlemi";
             this.BtnFaturaSatışİşlemi.Click += new System.EventHandler(this.BtnFaturaSatışİşlemi_Click);
             // 
+            // ribbonPanel14
+            // 
+            this.ribbonPanel14.Items.Add(this.ribbonButton2);
+            this.ribbonPanel14.Name = "ribbonPanel14";
+            this.ribbonPanel14.Text = "--------------------";
+            // 
+            // ribbonButton2
+            // 
+            this.ribbonButton2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.Image")));
+            this.ribbonButton2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.LargeImage")));
+            this.ribbonButton2.Name = "ribbonButton2";
+            this.ribbonButton2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.SmallImage")));
+            this.ribbonButton2.Text = "Barcode";
+            this.ribbonButton2.Click += new System.EventHandler(this.ribbonButton2_Click);
+            // 
             // ribbonTab5
             // 
             this.ribbonTab5.Name = "ribbonTab5";
@@ -444,25 +462,68 @@ namespace ERPYAZİLİM
             this.BtnAjanda.Text = "AJANDA";
             this.BtnAjanda.Click += new System.EventHandler(this.BtnAjanda_Click);
             // 
-            // ribbonPanel14
+            // button9
             // 
-            this.ribbonPanel14.Items.Add(this.ribbonButton2);
-            this.ribbonPanel14.Name = "ribbonPanel14";
-            this.ribbonPanel14.Text = "--------------------";
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(1821, 0);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(30, 30);
+            this.button9.TabIndex = 7;
+            this.button9.Text = "O";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Visible = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // ribbonButton2
+            // button8
             // 
-            this.ribbonButton2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.Image")));
-            this.ribbonButton2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.LargeImage")));
-            this.ribbonButton2.Name = "ribbonButton2";
-            this.ribbonButton2.Text = "Barcode";
-            this.ribbonButton2.Click += new System.EventHandler(this.ribbonButton2_Click);
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(1894, 0);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(30, 30);
+            this.button8.TabIndex = 6;
+            this.button8.Text = "O";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Visible = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10F);
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(1857, 0);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(30, 30);
+            this.button7.TabIndex = 5;
+            this.button7.Text = "O";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Visible = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.ribbon1);
             this.IsMdiContainer = true;
             this.KeyPreview = true;
@@ -530,6 +591,9 @@ namespace ERPYAZİLİM
         private System.Windows.Forms.RibbonButton BtnAjanda;
         private System.Windows.Forms.RibbonPanel ribbonPanel14;
         private System.Windows.Forms.RibbonButton ribbonButton2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
     }
 }
 

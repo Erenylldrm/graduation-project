@@ -75,7 +75,7 @@ namespace ERPYAZİLİM.Formlar
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel1.Location = new System.Drawing.Point(670, 42);
+            this.panel1.Location = new System.Drawing.Point(654, 42);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(302, 300);
             this.panel1.TabIndex = 46;
@@ -83,7 +83,7 @@ namespace ERPYAZİLİM.Formlar
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Location = new System.Drawing.Point(978, 42);
+            this.panel2.Location = new System.Drawing.Point(962, 42);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(302, 300);
             this.panel2.TabIndex = 47;
@@ -91,7 +91,7 @@ namespace ERPYAZİLİM.Formlar
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel3.Location = new System.Drawing.Point(1286, 42);
+            this.panel3.Location = new System.Drawing.Point(1270, 42);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(302, 300);
             this.panel3.TabIndex = 48;
@@ -99,7 +99,7 @@ namespace ERPYAZİLİM.Formlar
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel4.Location = new System.Drawing.Point(1594, 42);
+            this.panel4.Location = new System.Drawing.Point(1578, 42);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(302, 300);
             this.panel4.TabIndex = 49;
@@ -109,7 +109,7 @@ namespace ERPYAZİLİM.Formlar
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(670, 348);
+            this.dataGridView1.Location = new System.Drawing.Point(654, 348);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -148,7 +148,7 @@ namespace ERPYAZİLİM.Formlar
             this.groupBox1.Controls.Add(this.BtnSil);
             this.groupBox1.Controls.Add(this.BtnKaydet);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(20, 40);
+            this.groupBox1.Location = new System.Drawing.Point(4, 40);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(640, 785);
             this.groupBox1.TabIndex = 56;
@@ -159,7 +159,7 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(583, -11);
+            this.pictureBox2.Location = new System.Drawing.Point(567, -11);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(57, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -171,9 +171,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.Image")));
             this.BtnTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnTemizle.Location = new System.Drawing.Point(226, 673);
+            this.BtnTemizle.Location = new System.Drawing.Point(384, 491);
             this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(139, 49);
+            this.BtnTemizle.Size = new System.Drawing.Size(116, 62);
             this.BtnTemizle.TabIndex = 49;
             this.BtnTemizle.Text = "TEMİZLE";
             this.BtnTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -184,7 +184,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.btnNext.Image = ((System.Drawing.Image)(resources.GetObject("btnNext.Image")));
             this.btnNext.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNext.Location = new System.Drawing.Point(511, 132);
+            this.btnNext.Location = new System.Drawing.Point(495, 121);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(111, 53);
             this.btnNext.TabIndex = 57;
@@ -195,7 +195,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             // TxtMail
             // 
-            this.TxtMail.Location = new System.Drawing.Point(215, 360);
+            this.TxtMail.Location = new System.Drawing.Point(100, 469);
             this.TxtMail.Name = "TxtMail";
             this.TxtMail.Size = new System.Drawing.Size(216, 25);
             this.TxtMail.TabIndex = 4;
@@ -205,7 +205,7 @@ namespace ERPYAZİLİM.Formlar
             this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(215, 290);
+            this.comboBox1.Location = new System.Drawing.Point(100, 399);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(216, 25);
             this.comboBox1.TabIndex = 3;
@@ -213,9 +213,9 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(150, 408);
+            this.pictureBox12.Location = new System.Drawing.Point(35, 517);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox12.Size = new System.Drawing.Size(55, 50);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 78;
             this.pictureBox12.TabStop = false;
@@ -223,9 +223,9 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(150, 336);
+            this.pictureBox11.Location = new System.Drawing.Point(35, 445);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox11.Size = new System.Drawing.Size(55, 50);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 77;
             this.pictureBox11.TabStop = false;
@@ -233,9 +233,9 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(150, 266);
+            this.pictureBox10.Location = new System.Drawing.Point(35, 375);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox10.Size = new System.Drawing.Size(55, 50);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox10.TabIndex = 76;
             this.pictureBox10.TabStop = false;
@@ -243,7 +243,7 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(150, 201);
+            this.pictureBox9.Location = new System.Drawing.Point(35, 310);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(47, 49);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -253,9 +253,9 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(150, 136);
+            this.pictureBox8.Location = new System.Drawing.Point(35, 245);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox8.Size = new System.Drawing.Size(55, 50);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 74;
             this.pictureBox8.TabStop = false;
@@ -263,9 +263,9 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(150, 70);
+            this.pictureBox7.Location = new System.Drawing.Point(35, 179);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox7.Size = new System.Drawing.Size(55, 50);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 73;
             this.pictureBox7.TabStop = false;
@@ -273,7 +273,7 @@ namespace ERPYAZİLİM.Formlar
             // TxtID
             // 
             this.TxtID.Enabled = false;
-            this.TxtID.Location = new System.Drawing.Point(215, 94);
+            this.TxtID.Location = new System.Drawing.Point(100, 203);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(216, 25);
             this.TxtID.TabIndex = 0;
@@ -281,7 +281,7 @@ namespace ERPYAZİLİM.Formlar
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(211, 70);
+            this.label6.Location = new System.Drawing.Point(96, 179);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 19);
             this.label6.TabIndex = 72;
@@ -289,7 +289,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             // TxtAd
             // 
-            this.TxtAd.Location = new System.Drawing.Point(215, 160);
+            this.TxtAd.Location = new System.Drawing.Point(100, 269);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(216, 25);
             this.TxtAd.TabIndex = 1;
@@ -297,7 +297,7 @@ namespace ERPYAZİLİM.Formlar
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(211, 408);
+            this.label5.Location = new System.Drawing.Point(96, 517);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 19);
             this.label5.TabIndex = 71;
@@ -305,7 +305,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             // TxtSoyad
             // 
-            this.TxtSoyad.Location = new System.Drawing.Point(215, 225);
+            this.TxtSoyad.Location = new System.Drawing.Point(100, 334);
             this.TxtSoyad.Name = "TxtSoyad";
             this.TxtSoyad.Size = new System.Drawing.Size(216, 25);
             this.TxtSoyad.TabIndex = 2;
@@ -313,7 +313,7 @@ namespace ERPYAZİLİM.Formlar
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(211, 336);
+            this.label4.Location = new System.Drawing.Point(96, 445);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 19);
             this.label4.TabIndex = 70;
@@ -321,7 +321,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             // TxtTelefon
             // 
-            this.TxtTelefon.Location = new System.Drawing.Point(215, 432);
+            this.TxtTelefon.Location = new System.Drawing.Point(100, 541);
             this.TxtTelefon.Mask = "(999) 000-0000";
             this.TxtTelefon.Name = "TxtTelefon";
             this.TxtTelefon.Size = new System.Drawing.Size(216, 25);
@@ -330,7 +330,7 @@ namespace ERPYAZİLİM.Formlar
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(211, 266);
+            this.label3.Location = new System.Drawing.Point(96, 375);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 19);
             this.label3.TabIndex = 69;
@@ -339,7 +339,7 @@ namespace ERPYAZİLİM.Formlar
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(211, 201);
+            this.label2.Location = new System.Drawing.Point(96, 310);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 19);
             this.label2.TabIndex = 68;
@@ -348,7 +348,7 @@ namespace ERPYAZİLİM.Formlar
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(211, 136);
+            this.label1.Location = new System.Drawing.Point(96, 245);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 19);
             this.label1.TabIndex = 67;
@@ -358,9 +358,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnListele.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.Image")));
             this.BtnListele.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnListele.Location = new System.Drawing.Point(359, 509);
+            this.BtnListele.Location = new System.Drawing.Point(384, 355);
             this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(111, 53);
+            this.BtnListele.Size = new System.Drawing.Size(116, 62);
             this.BtnListele.TabIndex = 46;
             this.BtnListele.Text = "LİSTELE";
             this.BtnListele.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -371,9 +371,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnGüncelle.Image = ((System.Drawing.Image)(resources.GetObject("BtnGüncelle.Image")));
             this.BtnGüncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGüncelle.Location = new System.Drawing.Point(359, 596);
+            this.BtnGüncelle.Location = new System.Drawing.Point(384, 423);
             this.BtnGüncelle.Name = "BtnGüncelle";
-            this.BtnGüncelle.Size = new System.Drawing.Size(111, 53);
+            this.BtnGüncelle.Size = new System.Drawing.Size(116, 62);
             this.BtnGüncelle.TabIndex = 48;
             this.BtnGüncelle.Text = "GÜNCELLE";
             this.BtnGüncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -384,9 +384,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnSil.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.Image")));
             this.BtnSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSil.Location = new System.Drawing.Point(124, 596);
+            this.BtnSil.Location = new System.Drawing.Point(384, 287);
             this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(111, 53);
+            this.BtnSil.Size = new System.Drawing.Size(116, 62);
             this.BtnSil.TabIndex = 47;
             this.BtnSil.Text = "SİL";
             this.BtnSil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -397,9 +397,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnKaydet.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.Image")));
             this.BtnKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKaydet.Location = new System.Drawing.Point(124, 509);
+            this.BtnKaydet.Location = new System.Drawing.Point(384, 219);
             this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(111, 53);
+            this.BtnKaydet.Size = new System.Drawing.Size(116, 62);
             this.BtnKaydet.TabIndex = 45;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

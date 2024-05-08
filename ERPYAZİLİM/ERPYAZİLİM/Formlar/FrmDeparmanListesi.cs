@@ -31,6 +31,13 @@ namespace ERPYAZİLİM.Formlar
 
                 label4.Text = db.TBLDEPARTMAN.Count().ToString();
                 label7.Text = db.TBLPERSONEL.Count().ToString();
+                label9.Text = (from x in db.TBLPERSONEL
+                                       orderby x.AD ascending
+                                       select x.TBLDEPARTMAN.AD).FirstOrDefault();
+
+                label11.Text = (from x in db.TBLPERSONEL
+                                       orderby x.AD descending
+                                       select x.TBLDEPARTMAN.AD).FirstOrDefault();
             }
         }
 

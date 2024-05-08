@@ -90,6 +90,7 @@ namespace ERPYAZİLİM.Formlar
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "STOK SAYISINDA KRİTİK SEVİYE";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dataGridView1
             // 

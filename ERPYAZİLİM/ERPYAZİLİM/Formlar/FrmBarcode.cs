@@ -33,5 +33,30 @@ namespace ERPYAZİLİM.Formlar
             FrmQR2 frmQR2 = new FrmQR2();
             frmQR2.Show();
         }
+
+        private void FrmBarcode_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "Image Files (*.png, *.jpg, *.jpeg, *.bmp)|*.png;*.jpg;*.jpeg;*.bmp|All files (*.*)|*.*";
+                saveFileDialog.FileName = "barcode"; // Varsayılan dosya adı
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string fileName = saveFileDialog.FileName;
+                    pictureBox1.Image.Save(fileName); // Resmi kaydet
+                    MessageBox.Show("Barkod başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Kaydedilecek barkod bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

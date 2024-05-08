@@ -54,7 +54,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(131, 146);
+            this.panel1.Location = new System.Drawing.Point(137, 149);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 3);
             this.panel1.TabIndex = 69;
@@ -63,7 +63,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(131, 200);
+            this.panel2.Location = new System.Drawing.Point(137, 203);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(220, 3);
             this.panel2.TabIndex = 70;
@@ -72,7 +72,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(131, 254);
+            this.panel3.Location = new System.Drawing.Point(137, 257);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(220, 3);
             this.panel3.TabIndex = 71;
@@ -82,7 +82,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(57, 113);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(62, 45);
+            this.pictureBox1.Size = new System.Drawing.Size(55, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 72;
             this.pictureBox1.TabStop = false;
@@ -92,7 +92,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(57, 164);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 45);
+            this.pictureBox2.Size = new System.Drawing.Size(55, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 73;
             this.pictureBox2.TabStop = false;
@@ -102,7 +102,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(57, 217);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(62, 45);
+            this.pictureBox3.Size = new System.Drawing.Size(55, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 74;
             this.pictureBox3.TabStop = false;
@@ -124,7 +124,7 @@ namespace ERPYAZİLİM.Formlar
             this.TxtAlici.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtAlici.Font = new System.Drawing.Font("Tahoma", 7.8F);
             this.TxtAlici.ForeColor = System.Drawing.Color.White;
-            this.TxtAlici.Location = new System.Drawing.Point(131, 129);
+            this.TxtAlici.Location = new System.Drawing.Point(137, 132);
             this.TxtAlici.Name = "TxtAlici";
             this.TxtAlici.Size = new System.Drawing.Size(220, 16);
             this.TxtAlici.TabIndex = 76;
@@ -136,7 +136,7 @@ namespace ERPYAZİLİM.Formlar
             this.TxtKonu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TxtKonu.Font = new System.Drawing.Font("Tahoma", 7.8F);
             this.TxtKonu.ForeColor = System.Drawing.Color.White;
-            this.TxtKonu.Location = new System.Drawing.Point(131, 183);
+            this.TxtKonu.Location = new System.Drawing.Point(137, 186);
             this.TxtKonu.Name = "TxtKonu";
             this.TxtKonu.Size = new System.Drawing.Size(220, 16);
             this.TxtKonu.TabIndex = 77;
@@ -148,7 +148,7 @@ namespace ERPYAZİLİM.Formlar
             this.Txtİcerik.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Txtİcerik.Font = new System.Drawing.Font("Tahoma", 7.8F);
             this.Txtİcerik.ForeColor = System.Drawing.Color.White;
-            this.Txtİcerik.Location = new System.Drawing.Point(131, 237);
+            this.Txtİcerik.Location = new System.Drawing.Point(137, 240);
             this.Txtİcerik.Name = "Txtİcerik";
             this.Txtİcerik.Size = new System.Drawing.Size(220, 16);
             this.Txtİcerik.TabIndex = 78;

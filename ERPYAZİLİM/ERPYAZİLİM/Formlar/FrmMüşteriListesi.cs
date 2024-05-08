@@ -111,6 +111,31 @@ namespace ERPYAZİLİM.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(TxtAd.Text) || string.IsNullOrWhiteSpace(TxtSoyad.Text) || string.IsNullOrWhiteSpace(TxtTelefon.Text) || string.IsNullOrWhiteSpace(TxtMail.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(comboBox2.Text))
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                TBLCARI t = new TBLCARI();
+                t.AD = TxtAd.Text;
+                t.SOYAD = TxtSoyad.Text;
+                t.IL = comboBox1.Text;
+                t.ILCE = comboBox2.Text;
+                t.TELEFON = TxtTelefon.Text;
+                t.MAIL = TxtMail.Text;
+                db.TBLCARI.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Yeni Müşteri Sisteme Başarılı Bir Şekilde Eklendi ", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        /*{
             try
             {
                 TBLCARI t = new TBLCARI();
@@ -129,7 +154,7 @@ namespace ERPYAZİLİM.Formlar
             {
                 MessageBox.Show("Hata");
             }
-        }
+        }*/
 
         private void BtnListele_Click(object sender, EventArgs e)
         {

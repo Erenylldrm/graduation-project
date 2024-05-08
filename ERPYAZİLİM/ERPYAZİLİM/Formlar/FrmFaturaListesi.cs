@@ -68,6 +68,53 @@ namespace ERPYAZİLİM.Formlar
      
         private void BtnSatışYap_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(TxtSeri.Text) || string.IsNullOrWhiteSpace(TxtSira.Text) || string.IsNullOrWhiteSpace(TxtTarih.Text) || string.IsNullOrWhiteSpace(TxtSaat.Text) || string.IsNullOrWhiteSpace(TxtVergiDairesi.Text) || comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DateTime tarih;
+            if (!DateTime.TryParse(TxtTarih.Text, out tarih))
+            {
+                MessageBox.Show("Lütfen geçerli bir tarih formatı giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int cariId;
+            if (!int.TryParse(comboBox1.SelectedValue.ToString(), out cariId))
+            {
+                MessageBox.Show("Geçerli bir müşteri seçiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            short personelId;
+            if (!short.TryParse(comboBox2.SelectedValue.ToString(), out personelId))
+            {
+                MessageBox.Show("Geçerli bir personel seçiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                TBLFATURABILGI t = new TBLFATURABILGI();
+                t.SERI = TxtSeri.Text;
+                t.SIRANO = TxtSira.Text;
+                t.TARIH = tarih;
+                t.SAAT = TxtSaat.Text;
+                t.VERGIDAIRE = TxtVergiDairesi.Text;
+                t.CARI = cariId;
+                t.PERSONEL = personelId;
+                db.TBLFATURABILGI.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Fatura Sisteme Kaydedilmiştir, Kalem Girişi Yapabilirsiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        /*{
             TBLFATURABILGI t = new TBLFATURABILGI();
             t.SERI = TxtSeri.Text;
             t.SIRANO = TxtSira.Text;
@@ -79,7 +126,7 @@ namespace ERPYAZİLİM.Formlar
             db.TBLFATURABILGI.Add(t);
             db.SaveChanges();
             MessageBox.Show("Fatura Sisteme Kaydedilmiştir,Kalem Girişi Yapabilirsiniz.");
-        }
+        }*/
 
         private void BtnSil_Click(object sender, EventArgs e)
         {

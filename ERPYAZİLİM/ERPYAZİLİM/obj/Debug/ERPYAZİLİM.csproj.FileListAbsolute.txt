@@ -59,3 +59,6 @@ C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\bin\Debug\zxing.xml
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\bin\Debug\zxing.presentation.xml
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmBarcode.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\bin\Debug\Zen.Barcode.Core.dll
+C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.FrmMainMenü.resources
+C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.FrmLogin1.resources
+C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmAnasayfaa.resources

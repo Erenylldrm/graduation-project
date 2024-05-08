@@ -85,7 +85,7 @@ namespace ERPYAZİLİM.Formlar
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(909, 37);
+            this.panel1.Location = new System.Drawing.Point(907, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(331, 167);
             this.panel1.TabIndex = 38;
@@ -93,7 +93,7 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(237, 52);
+            this.pictureBox3.Location = new System.Drawing.Point(235, 52);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(71, 50);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -105,7 +105,7 @@ namespace ERPYAZİLİM.Formlar
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(49, 53);
+            this.label7.Location = new System.Drawing.Point(57, 52);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(147, 59);
             this.label7.TabIndex = 2;
@@ -116,7 +116,7 @@ namespace ERPYAZİLİM.Formlar
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(26, 20);
+            this.label5.Location = new System.Drawing.Point(24, 20);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(180, 23);
             this.label5.TabIndex = 1;
@@ -128,7 +128,7 @@ namespace ERPYAZİLİM.Formlar
             this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Location = new System.Drawing.Point(1246, 37);
+            this.panel2.Location = new System.Drawing.Point(1244, 37);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(331, 167);
             this.panel2.TabIndex = 38;
@@ -136,7 +136,7 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(244, 53);
+            this.pictureBox4.Location = new System.Drawing.Point(242, 53);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(71, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -148,7 +148,7 @@ namespace ERPYAZİLİM.Formlar
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(47, 52);
+            this.label9.Location = new System.Drawing.Point(23, 52);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(147, 59);
             this.label9.TabIndex = 2;
@@ -159,7 +159,7 @@ namespace ERPYAZİLİM.Formlar
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(31, 20);
+            this.label8.Location = new System.Drawing.Point(29, 20);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(271, 23);
             this.label8.TabIndex = 1;
@@ -171,7 +171,7 @@ namespace ERPYAZİLİM.Formlar
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Location = new System.Drawing.Point(1583, 37);
+            this.panel3.Location = new System.Drawing.Point(1581, 37);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(331, 167);
             this.panel3.TabIndex = 39;
@@ -179,7 +179,7 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(242, 52);
+            this.pictureBox5.Location = new System.Drawing.Point(240, 52);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(71, 50);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -191,7 +191,7 @@ namespace ERPYAZİLİM.Formlar
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(52, 52);
+            this.label11.Location = new System.Drawing.Point(22, 53);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(172, 59);
             this.label11.TabIndex = 2;
@@ -202,7 +202,7 @@ namespace ERPYAZİLİM.Formlar
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(30, 20);
+            this.label10.Location = new System.Drawing.Point(28, 20);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(248, 23);
             this.label10.TabIndex = 1;
@@ -214,7 +214,7 @@ namespace ERPYAZİLİM.Formlar
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(572, 37);
+            this.panel4.Location = new System.Drawing.Point(570, 37);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(331, 167);
             this.panel4.TabIndex = 40;
@@ -222,7 +222,7 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(233, 52);
+            this.pictureBox2.Location = new System.Drawing.Point(231, 52);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(71, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -234,7 +234,7 @@ namespace ERPYAZİLİM.Formlar
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(49, 53);
+            this.label4.Location = new System.Drawing.Point(54, 52);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 59);
             this.label4.TabIndex = 1;
@@ -245,7 +245,7 @@ namespace ERPYAZİLİM.Formlar
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(23, 20);
+            this.label3.Location = new System.Drawing.Point(21, 20);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(202, 23);
             this.label3.TabIndex = 0;
@@ -256,7 +256,7 @@ namespace ERPYAZİLİM.Formlar
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(572, 210);
+            this.dataGridView1.Location = new System.Drawing.Point(570, 210);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -283,7 +283,7 @@ namespace ERPYAZİLİM.Formlar
             this.groupBox1.Controls.Add(this.BtnKaydet);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(5, 40);
+            this.groupBox1.Location = new System.Drawing.Point(3, 40);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(561, 778);
             this.groupBox1.TabIndex = 57;
@@ -293,7 +293,7 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(504, -8);
+            this.pictureBox6.Location = new System.Drawing.Point(502, -8);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(57, 84);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -305,9 +305,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.Image")));
             this.BtnTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnTemizle.Location = new System.Drawing.Point(176, 613);
+            this.BtnTemizle.Location = new System.Drawing.Point(380, 450);
             this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(139, 49);
+            this.BtnTemizle.Size = new System.Drawing.Size(116, 62);
             this.BtnTemizle.TabIndex = 60;
             this.BtnTemizle.Text = "TEMİZLE";
             this.BtnTemizle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -317,9 +317,9 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(95, 242);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 323);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox1.Size = new System.Drawing.Size(55, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
@@ -327,7 +327,7 @@ namespace ERPYAZİLİM.Formlar
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(160, 242);
+            this.label2.Location = new System.Drawing.Point(100, 323);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 19);
             this.label2.TabIndex = 58;
@@ -335,7 +335,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             // TxtAcıklama
             // 
-            this.TxtAcıklama.Location = new System.Drawing.Point(164, 264);
+            this.TxtAcıklama.Location = new System.Drawing.Point(104, 345);
             this.TxtAcıklama.Name = "TxtAcıklama";
             this.TxtAcıklama.Size = new System.Drawing.Size(216, 134);
             this.TxtAcıklama.TabIndex = 2;
@@ -344,9 +344,9 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(95, 175);
+            this.pictureBox8.Location = new System.Drawing.Point(35, 256);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox8.Size = new System.Drawing.Size(55, 50);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 56;
             this.pictureBox8.TabStop = false;
@@ -354,9 +354,9 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(95, 110);
+            this.pictureBox7.Location = new System.Drawing.Point(35, 191);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(47, 49);
+            this.pictureBox7.Size = new System.Drawing.Size(55, 50);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 55;
             this.pictureBox7.TabStop = false;
@@ -364,7 +364,7 @@ namespace ERPYAZİLİM.Formlar
             // TxtID
             // 
             this.TxtID.Enabled = false;
-            this.TxtID.Location = new System.Drawing.Point(164, 134);
+            this.TxtID.Location = new System.Drawing.Point(104, 215);
             this.TxtID.Name = "TxtID";
             this.TxtID.Size = new System.Drawing.Size(216, 25);
             this.TxtID.TabIndex = 0;
@@ -372,7 +372,7 @@ namespace ERPYAZİLİM.Formlar
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(160, 110);
+            this.label6.Location = new System.Drawing.Point(100, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 19);
             this.label6.TabIndex = 54;
@@ -380,7 +380,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             // TxtAd
             // 
-            this.TxtAd.Location = new System.Drawing.Point(164, 199);
+            this.TxtAd.Location = new System.Drawing.Point(104, 280);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(216, 25);
             this.TxtAd.TabIndex = 1;
@@ -389,9 +389,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnListele.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.Image")));
             this.BtnListele.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnListele.Location = new System.Drawing.Point(296, 437);
+            this.BtnListele.Location = new System.Drawing.Point(380, 246);
             this.BtnListele.Name = "BtnListele";
-            this.BtnListele.Size = new System.Drawing.Size(111, 53);
+            this.BtnListele.Size = new System.Drawing.Size(116, 62);
             this.BtnListele.TabIndex = 46;
             this.BtnListele.Text = "LİSTELE";
             this.BtnListele.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -402,9 +402,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnGüncelle.Image = ((System.Drawing.Image)(resources.GetObject("BtnGüncelle.Image")));
             this.BtnGüncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGüncelle.Location = new System.Drawing.Point(296, 526);
+            this.BtnGüncelle.Location = new System.Drawing.Point(380, 382);
             this.BtnGüncelle.Name = "BtnGüncelle";
-            this.BtnGüncelle.Size = new System.Drawing.Size(111, 53);
+            this.BtnGüncelle.Size = new System.Drawing.Size(116, 62);
             this.BtnGüncelle.TabIndex = 48;
             this.BtnGüncelle.Text = "GÜNCELLE";
             this.BtnGüncelle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -415,9 +415,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnSil.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.Image")));
             this.BtnSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSil.Location = new System.Drawing.Point(95, 526);
+            this.BtnSil.Location = new System.Drawing.Point(380, 314);
             this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(111, 53);
+            this.BtnSil.Size = new System.Drawing.Size(116, 62);
             this.BtnSil.TabIndex = 47;
             this.BtnSil.Text = "SİL";
             this.BtnSil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -428,9 +428,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnKaydet.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.Image")));
             this.BtnKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKaydet.Location = new System.Drawing.Point(95, 437);
+            this.BtnKaydet.Location = new System.Drawing.Point(380, 178);
             this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(111, 53);
+            this.BtnKaydet.Size = new System.Drawing.Size(116, 62);
             this.BtnKaydet.TabIndex = 45;
             this.BtnKaydet.Text = "KAYDET";
             this.BtnKaydet.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -440,7 +440,7 @@ namespace ERPYAZİLİM.Formlar
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(160, 175);
+            this.label1.Location = new System.Drawing.Point(100, 256);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 19);
             this.label1.TabIndex = 49;

@@ -197,5 +197,10 @@ namespace ERPYAZİLİM.Formlar // GÜNCELLEME BUTONUNDA SORUN VAR ÇÖZ.
                 MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -40,12 +40,39 @@ namespace ERPYAZİLİM.Formlar
             }
             else
             {
-                MessageBox.Show("Kategori Adı Boş Geçilemez ve Kategori adı 30 karakterden uzun olamaz");
+                MessageBox.Show("Kategori Adı Boş Geçilemez ve Kategori adı 30 karakterden uzun olamaz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void BtnSil_Click(object sender, EventArgs e)
         {
+            int id;
+            if (!int.TryParse(TxtID.Text, out id))
+            {
+                MessageBox.Show("Lütfen geçerli bir ID girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var deger = db.TBLKATEGORI.Find(id);
+
+            if (deger == null)
+            {
+                MessageBox.Show("Bu ID'ye sahip bir kategori bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DialogResult result = MessageBox.Show("Kategoriyi gerçekten silmek istiyor musunuz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                db.TBLKATEGORI.Remove(deger);
+                db.SaveChanges();
+                MessageBox.Show("Kategori başarıyla silindi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            // DialogResult Yes dışında bir değer aldığında bir işlem yapmıyoruz, dolayısıyla else if bloğuna gerek yok.
+        }
+
+
+        /*{
             int id = int.Parse(TxtID.Text);
             var deger = db.TBLKATEGORI.Find(id);
 
@@ -60,16 +87,35 @@ namespace ERPYAZİLİM.Formlar
             {
                 MessageBox.Show("Silme işlemi iptal edildi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-        }
+        }*/
 
         private void BtnGüncelle_Click(object sender, EventArgs e)
         {
+            int id;
+            if (!int.TryParse(TxtID.Text, out id))
+            {
+                MessageBox.Show("Lütfen geçerli bir ID girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var deger = db.TBLKATEGORI.Find(id);
+            if (deger == null)
+            {
+                MessageBox.Show("Bu ID'ye sahip bir kategori bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            deger.AD = TxtAd.Text;
+            db.SaveChanges();
+            MessageBox.Show("Kategori başarıyla güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        /*{
             int id = int.Parse(TxtID.Text);
             var deger = db.TBLKATEGORI.Find(id);
             deger.AD = TxtAd.Text;
             db.SaveChanges();
             MessageBox.Show("Kategori başarıyla güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
+        }*/
 
         private void BtnListele_Click(object sender, EventArgs e)
         {

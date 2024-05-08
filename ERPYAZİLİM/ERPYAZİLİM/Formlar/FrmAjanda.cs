@@ -40,6 +40,36 @@ namespace ERPYAZİLİM.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(TxtBaslik.Text) || string.IsNullOrWhiteSpace(Txtİcerik.Text) || string.IsNullOrWhiteSpace(TxtTarih.Text))
+            {
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DateTime tarih;
+            if (!DateTime.TryParse(TxtTarih.Text, out tarih))
+            {
+                MessageBox.Show("Geçerli bir tarih formatı giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            try
+            {
+                TBLNOTLARIM t = new TBLNOTLARIM();
+                t.BASLIK = TxtBaslik.Text;
+                t.ICERIK = Txtİcerik.Text;
+                t.DURUM = false;
+                t.TARIH = tarih;
+                db.TBLNOTLARIM.Add(t);
+                db.SaveChanges();
+                MessageBox.Show("Not başarıyla kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        /*{
             TBLNOTLARIM t = new TBLNOTLARIM();
             t.BASLIK = TxtBaslik.Text;
             t.ICERIK = Txtİcerik.Text;
@@ -48,7 +78,7 @@ namespace ERPYAZİLİM.Formlar
             db.TBLNOTLARIM.Add(t);
             db.SaveChanges();
             MessageBox.Show("Not başarıyla kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+        }*/
 
         private void BtnSil_Click(object sender, EventArgs e)
         {

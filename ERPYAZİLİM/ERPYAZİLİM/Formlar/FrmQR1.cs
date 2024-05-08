@@ -46,5 +46,30 @@ namespace ERPYAZİLİM.Formlar
         {
             this.Close();
         }
+
+        private void FrmQR1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image != null)
+            {
+                SaveFileDialog dosyaKaydetDialog = new SaveFileDialog();
+                dosyaKaydetDialog.Filter = "Resim Dosyaları (*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+                dosyaKaydetDialog.Title = "QR Kod Resmini Kaydet";
+                dosyaKaydetDialog.FileName = "QRKodResmi";
+                if (dosyaKaydetDialog.ShowDialog() == DialogResult.OK)
+                {
+                    pictureBox1.Image.Save(dosyaKaydetDialog.FileName);
+                    MessageBox.Show("QR kod resmi başarıyla kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Kaydedilecek QR kod resmi bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

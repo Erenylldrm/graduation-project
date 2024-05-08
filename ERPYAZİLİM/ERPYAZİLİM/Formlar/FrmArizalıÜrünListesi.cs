@@ -109,6 +109,40 @@ namespace ERPYAZİLİM.Formlar
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
             TBLURUNKABUL t = new TBLURUNKABUL();
+            var selectedCari = comboBox1.SelectedItem as dynamic;
+            var selectedPersonel = comboBox2.SelectedItem as dynamic;
+
+            if (selectedCari == null)
+            {
+                MessageBox.Show("Lütfen bir müşteri seçin");
+                return;
+            }
+
+            if (selectedPersonel == null)
+            {
+                MessageBox.Show("Lütfen bir personel seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DateTime gelisTarih;
+            if (!DateTime.TryParse(TxtTarih.Text, out gelisTarih))
+            {
+                MessageBox.Show("Lütfen geçerli bir tarih formatı girin (GG.AA.YYYY)", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            t.CARI = (byte)selectedCari.ID;
+            t.PERSONEL = (short)selectedPersonel.ID;
+            t.GELISTARIH = gelisTarih;
+            t.URUNSERINO = TxtSeriNo.Text;
+            t.URUNDURUMDETAY = "Ürün Kaydoldu";
+            db.TBLURUNKABUL.Add(t);
+            db.SaveChanges();
+
+            MessageBox.Show("Ürün Arıza Girişi Yapıldı");
+        }
+        /*{
+            TBLURUNKABUL t = new TBLURUNKABUL();
             var selectedCari = comboBox1.SelectedItem;
             var selectedPersonel = comboBox2.SelectedItem;
 
@@ -133,7 +167,7 @@ namespace ERPYAZİLİM.Formlar
             db.SaveChanges();
 
             MessageBox.Show("Ürün Arıza Girişi Yapıldı");
-        }
+        }*/
 
         private void BtnListele_Click(object sender, EventArgs e)
         {
@@ -187,13 +221,13 @@ namespace ERPYAZİLİM.Formlar
 
                     if (selectedCari == null)
                     {
-                        MessageBox.Show("Lütfen bir müşteri seçin");
+                        MessageBox.Show("Lütfen bir müşteri seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 
                     if (selectedPersonel == null)
                     {
-                        MessageBox.Show("Lütfen bir personel seçin");
+                        MessageBox.Show("Lütfen bir personel seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
 

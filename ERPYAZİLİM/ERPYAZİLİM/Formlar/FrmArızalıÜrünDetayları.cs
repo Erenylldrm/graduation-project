@@ -85,12 +85,12 @@ namespace ERPYAZİLİM.Formlar
                 }
                 else
                 {
-                    MessageBox.Show("Belirtilen ID ile ürün bulunamadı!");
+                    MessageBox.Show("Belirtilen ID ile ürün bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen bir ürün seçin!");
+                MessageBox.Show("Lütfen bir ürün seçin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -101,6 +101,27 @@ namespace ERPYAZİLİM.Formlar
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+            TBLURUNTAKIP yeniUrun = new TBLURUNTAKIP();
+
+            yeniUrun.ACIKLAMA = richTextBox1.Text;
+            yeniUrun.SERINO = TxtSeriNo.Text;
+
+            DateTime tarih;
+            if (!DateTime.TryParse(TxtTarih.Text, out tarih))
+            {
+                MessageBox.Show("Lütfen geçerli bir tarih formatı girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            yeniUrun.TARIH = tarih;
+
+            db.TBLURUNTAKIP.Add(yeniUrun);
+            db.SaveChanges();
+
+            MessageBox.Show("Yeni ürün takip kaydedildi");
+
+            BtnListele_Click(sender, e); // Listeleme işlemini çağırarak DataGridView'i güncelle
+        }
+        /*{
 
             TBLURUNTAKIP yeniUrun = new TBLURUNTAKIP();
 
@@ -115,7 +136,7 @@ namespace ERPYAZİLİM.Formlar
 
             BtnListele_Click(sender, e); // Listeleme işlemini çağırarak DataGridView'i güncelle
 
-        }
+        }*/
 
         private void BtnSil_Click(object sender, EventArgs e)
         {
@@ -138,12 +159,12 @@ namespace ERPYAZİLİM.Formlar
                 }
                 else
                 {
-                    MessageBox.Show("Belirtilen ID ile ürün bulunamadı!");
+                    MessageBox.Show("Belirtilen ID ile ürün bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen bir ürün seçin!");
+                MessageBox.Show("Lütfen bir ürün seçin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
