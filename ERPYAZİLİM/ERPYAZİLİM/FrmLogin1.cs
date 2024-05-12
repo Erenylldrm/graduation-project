@@ -64,7 +64,7 @@ namespace ERPYAZİLİM
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

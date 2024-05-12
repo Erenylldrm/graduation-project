@@ -40,6 +40,7 @@ namespace ERPYAZİLİM.Formlar
         }
         private void FrmPersonelListesi_Load(object sender, EventArgs e)
         {
+           
             Liste();
 
             comboBox1.DataSource = db.TBLDEPARTMAN.ToList().Select(x => new
@@ -68,80 +69,81 @@ namespace ERPYAZİLİM.Formlar
 
         private void SonrakiPanelGrubunuGoster()
         {
-            for (int i = 1; i <= panelSayisi; i++)
-            {
-                Panel panel = this.Controls.Find("panel" + i, true).FirstOrDefault() as Panel;
-                panel.Controls.Clear(); // Önceki panelleri temizle
+             for (int i = 1; i <= panelSayisi; i++)
+             {
+                 Panel panel = this.Controls.Find("panel" + i, true).FirstOrDefault() as Panel;
+                 panel.Controls.Clear(); // Önceki panelleri temizle
 
-                if (mevcutPersonelIndeksi < toplamPersonelSayisi)
-                {
-                    baglanti.Open();
-                    string sorgu = $"SELECT AD, SOYAD, DEPARTMAN, MAIL, TELEFON FROM TBLPERSONEL ORDER BY ID OFFSET {mevcutPersonelIndeksi} ROWS FETCH NEXT 1 ROWS ONLY";
-                    SqlCommand komut = new SqlCommand(sorgu, baglanti);
-                    SqlDataReader dr = komut.ExecuteReader();
+                 if (mevcutPersonelIndeksi < toplamPersonelSayisi)
+                 {
+                     baglanti.Open();
+                     string sorgu = $"SELECT AD, SOYAD, DEPARTMAN, MAIL, TELEFON FROM TBLPERSONEL ORDER BY ID OFFSET {mevcutPersonelIndeksi} ROWS FETCH NEXT 1 ROWS ONLY";
+                     SqlCommand komut = new SqlCommand(sorgu, baglanti);
+                     SqlDataReader dr = komut.ExecuteReader();
 
-                    if (dr.Read())
-                    {
-                        string ad = dr["AD"].ToString();
-                        string soyad = dr["SOYAD"].ToString();
-                        string departman = dr["DEPARTMAN"].ToString();
-                        string email = dr["MAIL"].ToString();
-                        string telefon = dr["TELEFON"].ToString();
+                     if (dr.Read())
+                     {
+                         string ad = dr["AD"].ToString();
+                         string soyad = dr["SOYAD"].ToString();
+                         string departman = dr["DEPARTMAN"].ToString();
+                         string email = dr["MAIL"].ToString();
+                         string telefon = dr["TELEFON"].ToString();
 
-                        Label adLabel = new Label();
-                        adLabel.Text = $"Ad: {ad}";
-                        adLabel.Location = new System.Drawing.Point(80, 150);
-                        adLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
-                        adLabel.ForeColor = Color.Black;
-                        panel.Controls.Add(adLabel);
+                         Label adLabel = new Label();
+                         adLabel.Text = $"Ad: {ad}";
+                         adLabel.Location = new System.Drawing.Point(80, 150);
+                         adLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
+                         adLabel.ForeColor = Color.Black;
+                         panel.Controls.Add(adLabel);
 
-                        Label soyadLabel = new Label();
-                        soyadLabel.Text = $"Soyad: {soyad}";
-                        soyadLabel.Location = new System.Drawing.Point(80, 180);
-                        soyadLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
-                        soyadLabel.ForeColor = Color.Black;
-                        panel.Controls.Add(soyadLabel);
+                         Label soyadLabel = new Label();
+                         soyadLabel.Text = $"Soyad: {soyad}";
+                         soyadLabel.Location = new System.Drawing.Point(80, 180);
+                         soyadLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
+                         soyadLabel.ForeColor = Color.Black;
+                         panel.Controls.Add(soyadLabel);
 
-                        Label departmanLabel = new Label();
-                        departmanLabel.Text = $"Departman: {departman}";
-                        departmanLabel.Location = new System.Drawing.Point(80, 210);
-                        departmanLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
-                        departmanLabel.ForeColor = Color.Black;
-                        panel.Controls.Add(departmanLabel);
+                         Label departmanLabel = new Label();
+                         departmanLabel.Text = $"Departman: {departman}";
+                         departmanLabel.Location = new System.Drawing.Point(80, 210);
+                         departmanLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
+                         departmanLabel.ForeColor = Color.Black;
+                         panel.Controls.Add(departmanLabel);
 
-                        Label emailLabel = new Label();
-                        emailLabel.Text = $"Email: {email}";
-                        emailLabel.Location = new System.Drawing.Point(80, 240);
-                        emailLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
-                        emailLabel.ForeColor = Color.Black;
-                        panel.Controls.Add(emailLabel);
+                         Label emailLabel = new Label();
+                         emailLabel.Text = $"Email: {email}";
+                         emailLabel.Location = new System.Drawing.Point(80, 240);
+                         emailLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
+                         emailLabel.ForeColor = Color.Black;
+                         panel.Controls.Add(emailLabel);
 
-                        Label telefonLabel = new Label();
-                        telefonLabel.Text = $"Telefon: {telefon}";
-                        telefonLabel.Location = new System.Drawing.Point(80, 270);
-                        telefonLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
-                        telefonLabel.ForeColor = Color.Black;
-                        panel.Controls.Add(telefonLabel);
+                         Label telefonLabel = new Label();
+                         telefonLabel.Text = $"Telefon: {telefon}";
+                         telefonLabel.Location = new System.Drawing.Point(80, 270);
+                         telefonLabel.Font = new Font("Segoe UI", 7.8f, FontStyle.Bold);
+                         telefonLabel.ForeColor = Color.Black;
+                         panel.Controls.Add(telefonLabel);
 
-                        // PictureBox ekleme
-                        PictureBox pictureBox = new PictureBox();
-                        pictureBox.ImageLocation = @"C:\Users\engineer\Desktop\Resimler\Male User.png"; 
-                        pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-                        pictureBox.Size = new Size(100, 100); 
-                        pictureBox.Location = new Point(80, 20);
-                        panel.Controls.Add(pictureBox);
-                    }
+                         // PictureBox ekleme
+                         PictureBox pictureBox = new PictureBox();
+                         pictureBox.ImageLocation = @"C:\Users\engineer\Desktop\Resimler\Male User.png"; 
+                         pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                         pictureBox.Size = new Size(100, 100); 
+                         pictureBox.Location = new Point(80, 20);
+                         panel.Controls.Add(pictureBox);
+                     }
 
-                    dr.Close();
-                    baglanti.Close();
+                     dr.Close();
+                     baglanti.Close();
 
-                    mevcutPersonelIndeksi++;
-                }
-            }
+                     mevcutPersonelIndeksi++;
+                 }
+             }
 
-            if (mevcutPersonelIndeksi >= toplamPersonelSayisi)
-                mevcutPersonelIndeksi = 0; // Son kişiye ulaşıldığında başa dön
-
+             if (mevcutPersonelIndeksi >= toplamPersonelSayisi)
+                 mevcutPersonelIndeksi = 0; // Son kişiye ulaşıldığında başa dön
+            
+            
 
         }
 

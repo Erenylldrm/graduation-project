@@ -248,7 +248,7 @@ namespace ERPYAZİLİM.Formlar
             this.groupBox8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.groupBox8.Controls.Add(this.pictureBox10);
             this.groupBox8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
-            this.groupBox8.Location = new System.Drawing.Point(1568, 680);
+            this.groupBox8.Location = new System.Drawing.Point(1568, 681);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(324, 161);
             this.groupBox8.TabIndex = 7;
@@ -275,7 +275,7 @@ namespace ERPYAZİLİM.Formlar
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1332, 466);
+            this.dataGridView1.Size = new System.Drawing.Size(1352, 466);
             this.dataGridView1.TabIndex = 52;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
@@ -297,7 +297,7 @@ namespace ERPYAZİLİM.Formlar
             this.groupBox9.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(3, 42);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(557, 797);
+            this.groupBox9.Size = new System.Drawing.Size(557, 820);
             this.groupBox9.TabIndex = 58;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "KATEGORİ İŞLEMLERİ";

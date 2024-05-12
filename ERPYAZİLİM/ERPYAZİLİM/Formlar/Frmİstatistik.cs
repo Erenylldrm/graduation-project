@@ -19,10 +19,11 @@ namespace ERPYAZİLİM.Formlar
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
         private void Frmİstatistik_Load(object sender, EventArgs e)
         {
+     
             label2.Text = db.TBLURUN.Count().ToString();
             label4.Text = db.TBLKATEGORI.Count().ToString();
             label6.Text = db.TBLURUN.Sum(x => x.STOK).ToString();
-            label8.Text = "10";
+            //label8.Text = "10";
             
             label12.Text = (from x in db.TBLURUN
                                    orderby x.STOK descending
@@ -50,19 +51,30 @@ namespace ERPYAZİLİM.Formlar
             label38.Text = db.TBLURUN.Count(x => x.KATEGORI == 1).ToString();
             label40.Text = db.TBLURUN.Count(x => x.KATEGORI == 3).ToString();
 
-            //8,10,20,24,28,30,32,34
             label24.Text = db.TBLURUN
                 .GroupBy(x => x.MARKA)
                 .OrderByDescending(g => g.Count())
                 .Select(g => g.Key)
                 .FirstOrDefault();
+
+            label8.Text = db.TBLURUN.Count(x => x.STOK < 30).ToString();
+
+            var enDusukFiyatliUrun = db.TBLURUN.OrderBy(x => x.SATISFIYAT).FirstOrDefault();
+            if (enDusukFiyatliUrun != null)
+                label20.Text = enDusukFiyatliUrun.AD;
+
+         
+            label30.Text = db.TBLURUN.Count().ToString();
+
+            DateTime baslangic = DateTime.Today;
+            DateTime bitis = baslangic.AddDays(1); // Bugün 00:00:00 ile yarın 00:00:00 arasındaki verileri alır
+            label10.Text = db.TBLURUNHAREKET.Count(x => x.TARIH >= baslangic && x.TARIH < bitis).ToString();
+
+            label28.Text = db.TBLURUNKABUL.Count(x => x.URUNDURUMDETAY == "Parça Bekliyor.").ToString();         
+            label32.Text = db.TBLURUNKABUL.Count(x => x.URUNDURUMDETAY == "Mesaj Bekliyor.").ToString();
+            label34.Text = db.TBLURUNKABUL.Count(x => x.URUNDURUMDETAY == "İptal Bekliyor.").ToString();
+
            
-
-        }
-
-        private void label37_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -20,6 +20,7 @@ namespace ERPYAZİLİM.Formlar
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
         private void FrmMarkaİstatistikleri_Load(object sender, EventArgs e)
         {
+           
             var degerler = db.TBLURUN.OrderBy(x => x.MARKA).GroupBy(y => y.MARKA).Select(z => new
             {
                 Marka = z.Key,
@@ -39,7 +40,8 @@ namespace ERPYAZİLİM.Formlar
             chart1.Series.Add("Series 1");
             chart1.Series["Series 1"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
 
-            SqlConnection baglanti = new SqlConnection(@"Data Source=Acer\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
+            //SqlConnection baglanti = new SqlConnection(@"Data Source=Acer\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
             SqlCommand komut;
             SqlDataReader dr;
 

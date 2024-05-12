@@ -32,6 +32,7 @@ namespace ERPYAZİLİM.Formlar
 
         private void FrmArızalıÜrünDetayları_Load(object sender, EventArgs e)
         {
+            
             TxtSeriNo.Text = serino;
             dataGridView1.DataSource = (from x in db.TBLURUNTAKIP
                                        select new
@@ -202,6 +203,11 @@ namespace ERPYAZİLİM.Formlar
             {
                 MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

@@ -41,14 +41,16 @@ namespace ERPYAZİLİM.Formlar
         private void FrmMüşteriListesi_Load(object sender, EventArgs e)
 
         {
-           
+        
 
             dataGridView2.DataSource = db.TBLCARI.OrderBy(x => x.IL).
               GroupBy(y => y.IL).
               Select(z => new { İL = z.Key, TOPLAM = z.Count() }).ToList();
 
            
-            SqlConnection baglanti = new SqlConnection(@"Data Source=Acer\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
+            //SqlConnection baglanti = new SqlConnection(@"Data Source=Acer\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
+          
             baglanti.Open();
             SqlCommand komut = new SqlCommand("SELECT IL, COUNT(*) FROM TBLCARI GROUP BY IL", baglanti);
             SqlDataReader dr = komut.ExecuteReader();

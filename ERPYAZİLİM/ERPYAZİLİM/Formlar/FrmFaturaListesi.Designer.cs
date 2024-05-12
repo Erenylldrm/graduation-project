@@ -410,7 +410,7 @@ namespace ERPYAZİLİM.Formlar
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1430, 457);
+            this.dataGridView1.Size = new System.Drawing.Size(1438, 457);
             this.dataGridView1.TabIndex = 76;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
@@ -487,7 +487,7 @@ namespace ERPYAZİLİM.Formlar
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1430, 306);
+            this.dataGridView2.Size = new System.Drawing.Size(1438, 319);
             this.dataGridView2.TabIndex = 84;
             // 
             // groupBox2
@@ -506,7 +506,7 @@ namespace ERPYAZİLİM.Formlar
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(5, 569);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(479, 240);
+            this.groupBox2.Size = new System.Drawing.Size(479, 253);
             this.groupBox2.TabIndex = 85;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "FATURA SORGULAMA :";

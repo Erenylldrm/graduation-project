@@ -187,7 +187,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnKaydet.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.Image")));
             this.BtnKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKaydet.Location = new System.Drawing.Point(542, 46);
+            this.BtnKaydet.Location = new System.Drawing.Point(530, 45);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(116, 62);
             this.BtnKaydet.TabIndex = 10;
@@ -240,7 +240,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.Image")));
             this.BtnTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnTemizle.Location = new System.Drawing.Point(542, 318);
+            this.BtnTemizle.Location = new System.Drawing.Point(530, 317);
             this.BtnTemizle.Name = "BtnTemizle";
             this.BtnTemizle.Size = new System.Drawing.Size(116, 62);
             this.BtnTemizle.TabIndex = 12;
@@ -253,7 +253,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnGüncelle.Image = ((System.Drawing.Image)(resources.GetObject("BtnGüncelle.Image")));
             this.BtnGüncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGüncelle.Location = new System.Drawing.Point(542, 250);
+            this.BtnGüncelle.Location = new System.Drawing.Point(530, 249);
             this.BtnGüncelle.Name = "BtnGüncelle";
             this.BtnGüncelle.Size = new System.Drawing.Size(116, 62);
             this.BtnGüncelle.TabIndex = 14;
@@ -266,7 +266,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnSil.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.Image")));
             this.BtnSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSil.Location = new System.Drawing.Point(542, 182);
+            this.BtnSil.Location = new System.Drawing.Point(530, 181);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(116, 62);
             this.BtnSil.TabIndex = 13;
@@ -315,7 +315,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnListele.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.Image")));
             this.BtnListele.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnListele.Location = new System.Drawing.Point(542, 114);
+            this.BtnListele.Location = new System.Drawing.Point(530, 113);
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(116, 62);
             this.BtnListele.TabIndex = 11;

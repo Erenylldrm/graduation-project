@@ -29,12 +29,12 @@ namespace ERPYAZİLİM.Formlar
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMarkaİstatistikleri));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -97,7 +97,7 @@ namespace ERPYAZİLİM.Formlar
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(695, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 167);
+            this.panel1.Size = new System.Drawing.Size(301, 167);
             this.panel1.TabIndex = 9;
             // 
             // label2
@@ -127,9 +127,9 @@ namespace ERPYAZİLİM.Formlar
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(163)))), ((int)(((byte)(188)))));
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(997, 52);
+            this.panel3.Location = new System.Drawing.Point(1002, 52);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(296, 167);
+            this.panel3.Size = new System.Drawing.Size(301, 167);
             this.panel3.TabIndex = 11;
             // 
             // label4
@@ -159,9 +159,9 @@ namespace ERPYAZİLİM.Formlar
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(26)))));
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(1299, 52);
+            this.panel2.Location = new System.Drawing.Point(1313, 51);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(296, 167);
+            this.panel2.Size = new System.Drawing.Size(301, 167);
             this.panel2.TabIndex = 12;
             // 
             // label6
@@ -191,9 +191,9 @@ namespace ERPYAZİLİM.Formlar
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label7);
-            this.panel4.Location = new System.Drawing.Point(1601, 52);
+            this.panel4.Location = new System.Drawing.Point(1619, 52);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(296, 167);
+            this.panel4.Size = new System.Drawing.Size(301, 167);
             this.panel4.TabIndex = 13;
             // 
             // label8
@@ -228,16 +228,16 @@ namespace ERPYAZİLİM.Formlar
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(3, -4);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(588, 598);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -247,45 +247,40 @@ namespace ERPYAZİLİM.Formlar
             this.panel6.Controls.Add(this.chart2);
             this.panel6.Location = new System.Drawing.Point(1299, 225);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(594, 463);
+            this.panel6.Size = new System.Drawing.Size(625, 463);
             this.panel6.TabIndex = 15;
             // 
             // chart2
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
+            chartArea4.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart2.Legends.Add(legend4);
             this.chart2.Location = new System.Drawing.Point(4, -1);
             this.chart2.Name = "chart2";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(587, 457);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart2.Series.Add(series4);
+            this.chart2.Size = new System.Drawing.Size(618, 457);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.panel13);
-            this.panel7.Controls.Add(this.panel12);
-            this.panel7.Controls.Add(this.panel11);
-            this.panel7.Controls.Add(this.panel10);
             this.panel7.Controls.Add(this.panel9);
-            this.panel7.Controls.Add(this.panel8);
             this.panel7.Location = new System.Drawing.Point(1303, 694);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(594, 132);
+            this.panel7.Size = new System.Drawing.Size(621, 132);
             this.panel7.TabIndex = 16;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(30)))), ((int)(((byte)(81)))));
             this.panel13.Controls.Add(this.pictureBox6);
-            this.panel13.Location = new System.Drawing.Point(496, -1);
+            this.panel13.Location = new System.Drawing.Point(1821, 693);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(93, 114);
+            this.panel13.Size = new System.Drawing.Size(98, 114);
             this.panel13.TabIndex = 22;
             // 
             // pictureBox6
@@ -294,7 +289,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(0, 0);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(93, 114);
+            this.pictureBox6.Size = new System.Drawing.Size(98, 114);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
@@ -303,9 +298,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(195)))), ((int)(((byte)(18)))));
             this.panel12.Controls.Add(this.pictureBox5);
-            this.panel12.Location = new System.Drawing.Point(397, -1);
+            this.panel12.Location = new System.Drawing.Point(1720, 693);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(93, 114);
+            this.panel12.Size = new System.Drawing.Size(98, 114);
             this.panel12.TabIndex = 21;
             // 
             // pictureBox5
@@ -314,7 +309,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(93, 114);
+            this.pictureBox5.Size = new System.Drawing.Size(98, 114);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
@@ -323,9 +318,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(90)))), ((int)(((byte)(36)))));
             this.panel11.Controls.Add(this.pictureBox4);
-            this.panel11.Location = new System.Drawing.Point(298, -1);
+            this.panel11.Location = new System.Drawing.Point(1616, 693);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(93, 114);
+            this.panel11.Size = new System.Drawing.Size(98, 114);
             this.panel11.TabIndex = 20;
             // 
             // pictureBox4
@@ -334,7 +329,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(93, 114);
+            this.pictureBox4.Size = new System.Drawing.Size(98, 114);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -343,9 +338,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(50)))));
             this.panel10.Controls.Add(this.pictureBox3);
-            this.panel10.Location = new System.Drawing.Point(199, -1);
+            this.panel10.Location = new System.Drawing.Point(1514, 693);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(93, 114);
+            this.panel10.Size = new System.Drawing.Size(98, 114);
             this.panel10.TabIndex = 19;
             // 
             // pictureBox3
@@ -354,7 +349,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(93, 114);
+            this.pictureBox3.Size = new System.Drawing.Size(98, 114);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -363,9 +358,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(76)))), ((int)(((byte)(103)))));
             this.panel9.Controls.Add(this.pictureBox2);
-            this.panel9.Location = new System.Drawing.Point(102, -1);
+            this.panel9.Location = new System.Drawing.Point(109, 0);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(93, 114);
+            this.panel9.Size = new System.Drawing.Size(98, 113);
             this.panel9.TabIndex = 18;
             // 
             // pictureBox2
@@ -374,7 +369,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(93, 114);
+            this.pictureBox2.Size = new System.Drawing.Size(98, 113);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -383,9 +378,9 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(203)))), ((int)(((byte)(196)))));
             this.panel8.Controls.Add(this.pictureBox1);
-            this.panel8.Location = new System.Drawing.Point(3, -1);
+            this.panel8.Location = new System.Drawing.Point(1308, 693);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(93, 114);
+            this.panel8.Size = new System.Drawing.Size(98, 114);
             this.panel8.TabIndex = 17;
             // 
             // pictureBox1
@@ -394,7 +389,7 @@ namespace ERPYAZİLİM.Formlar
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(93, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(98, 114);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -416,6 +411,11 @@ namespace ERPYAZİLİM.Formlar
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.panel10);
+            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.panel11);
+            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.panel13);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);

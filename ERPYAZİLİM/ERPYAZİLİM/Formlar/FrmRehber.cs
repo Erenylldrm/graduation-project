@@ -19,6 +19,7 @@ namespace ERPYAZİLİM.Formlar
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
         private void FrmRehber_Load(object sender, EventArgs e)
         {
+       
             dataGridView1.DataSource = (from x in db.TBLCARI
                                        select new
                                        {

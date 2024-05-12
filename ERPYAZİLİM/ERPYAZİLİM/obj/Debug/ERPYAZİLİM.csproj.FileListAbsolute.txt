@@ -27,8 +27,6 @@ C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmPersonelListesi.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.Frmİstatistik.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\bin\Debug\AjaxMin.dll
-C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\bin\Debug\Gmap.net.dll
-C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\bin\Debug\Gmap.net.pdb
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmKategoriListesi.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmÜrünListesi.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmMarkaİstatistikleri.resources
@@ -62,3 +60,4 @@ C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\bin\Debug\Zen.Barcode.C
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.FrmMainMenü.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.FrmLogin1.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmAnasayfaa.resources
+C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.FrmMainMenu.resources

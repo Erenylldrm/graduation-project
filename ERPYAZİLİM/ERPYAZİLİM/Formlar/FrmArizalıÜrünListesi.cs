@@ -31,7 +31,7 @@ namespace ERPYAZİLİM.Formlar
         }
         private void FrmArizalıÜrünListesi_Load(object sender, EventArgs e)
         {
-
+           
             //MÜŞTERİ
 
             comboBox1.DisplayMember = "AD"; // Görüntülenen metin
@@ -75,7 +75,8 @@ namespace ERPYAZİLİM.Formlar
             label12.Text = db.TBLURUNKABUL.Count(x => x.URUNDURUMDETAY == "İptal Bekliyor.").ToString();
 
 
-            SqlConnection baglanti = new SqlConnection(@"Data Source=Acer\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
+            //SqlConnection baglanti = new SqlConnection(@"Data Source=Acer\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
+            SqlConnection baglanti = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=Db TıcarıOtomasyon;Integrated Security=True");
             baglanti.Open();
             SqlCommand komut = new SqlCommand("SELECT URUNDURUMDETAY,COUNT(*) FROM TBLURUNKABUL GROUP BY URUNDURUMDETAY", baglanti);
             SqlDataReader dr = komut.ExecuteReader();

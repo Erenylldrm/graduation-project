@@ -21,6 +21,7 @@ namespace ERPYAZİLİM.Formlar
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
         private void FrmQRDetay_Load(object sender, EventArgs e)
         {
+          
             // Serino ile ilgili tarih ve açıklamaları göster
             string tarihVeAciklamalar = GetTarihVeAciklamalar(Serino);
             if (!string.IsNullOrEmpty(tarihVeAciklamalar))

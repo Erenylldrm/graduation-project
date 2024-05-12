@@ -37,6 +37,7 @@ namespace ERPYAZİLİM.Formlar // GÜNCELLEME BUTONUNDA SORUN VAR ÇÖZ.
         }
         private void FrmÜrünListesi_Load(object sender, EventArgs e)
         {
+          
             metot1();
 
             comboBox1.DisplayMember = "AD"; // Görüntülenen metin

@@ -35,6 +35,7 @@ namespace ERPYAZİLİM.Formlar
         }
         private void FrmFaturaSatışİşlemi_Load(object sender, EventArgs e)
         {
+           
             listele();
         }
 

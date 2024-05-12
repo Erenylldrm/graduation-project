@@ -16,7 +16,7 @@ namespace ERPYAZİLİM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1()); //FrmLogin
+            Application.Run(new FrmLogin1()); //FrmLogin
         }
     }
 }

@@ -75,33 +75,33 @@ namespace ERPYAZİLİM.Formlar
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel1.Location = new System.Drawing.Point(654, 42);
+            this.panel1.Location = new System.Drawing.Point(647, 42);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(302, 300);
+            this.panel1.Size = new System.Drawing.Size(315, 300);
             this.panel1.TabIndex = 46;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Location = new System.Drawing.Point(962, 42);
+            this.panel2.Location = new System.Drawing.Point(967, 42);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(302, 300);
+            this.panel2.Size = new System.Drawing.Size(315, 300);
             this.panel2.TabIndex = 47;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel3.Location = new System.Drawing.Point(1270, 42);
+            this.panel3.Location = new System.Drawing.Point(1288, 42);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(302, 300);
+            this.panel3.Size = new System.Drawing.Size(315, 300);
             this.panel3.TabIndex = 48;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel4.Location = new System.Drawing.Point(1578, 42);
+            this.panel4.Location = new System.Drawing.Point(1608, 42);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(302, 300);
+            this.panel4.Size = new System.Drawing.Size(315, 300);
             this.panel4.TabIndex = 49;
             // 
             // dataGridView1
@@ -109,11 +109,11 @@ namespace ERPYAZİLİM.Formlar
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(654, 348);
+            this.dataGridView1.Location = new System.Drawing.Point(647, 348);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1226, 477);
+            this.dataGridView1.Size = new System.Drawing.Size(1276, 477);
             this.dataGridView1.TabIndex = 50;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);

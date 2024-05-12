@@ -19,6 +19,7 @@ namespace ERPYAZİLİM.Formlar
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
         private void FrmGelenMesajlar_Load(object sender, EventArgs e)
         {
+         
             label2.Text = db.TBLILETISIM.Count().ToString();
             label4.Text = db.TBLILETISIM.Where(x => x.KONU == "Teşekkür").Count().ToString();
             label6.Text = db.TBLILETISIM.Where(x => x.KONU == "Rica").Count().ToString();

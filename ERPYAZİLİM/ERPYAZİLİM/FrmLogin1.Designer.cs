@@ -38,6 +38,7 @@ namespace ERPYAZİLİM
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@ namespace ERPYAZİLİM
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BtnClose = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -77,11 +77,11 @@ namespace ERPYAZİLİM
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(85, 494);
+            this.label5.Location = new System.Drawing.Point(49, 495);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 17);
+            this.label5.Size = new System.Drawing.Size(234, 17);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Develop By Eren Yıldırım";
+            this.label5.Text = "Developed By M.Eren Yıldırım";
             // 
             // label4
             // 
@@ -153,6 +153,22 @@ namespace ERPYAZİLİM
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(240, 324);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(163, 36);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "PERSONEL GİRİŞİ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -266,22 +282,6 @@ namespace ERPYAZİLİM
             this.BtnClose.Text = "X";
             this.BtnClose.UseVisualStyleBackColor = true;
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(240, 324);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(163, 36);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "PERSONEL GİRİŞİ";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FrmLogin1
             // 

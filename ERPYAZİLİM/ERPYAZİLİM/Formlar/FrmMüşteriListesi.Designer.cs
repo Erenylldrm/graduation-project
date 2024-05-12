@@ -180,9 +180,9 @@ namespace ERPYAZİLİM.Formlar
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(15, 22);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 23);
+            this.label7.Size = new System.Drawing.Size(173, 23);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Toplam Cari Sayısı";
+            this.label7.Text = "Toplam Müşteri Sayısı";
             // 
             // panel5
             // 
@@ -440,7 +440,7 @@ namespace ERPYAZİLİM.Formlar
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(502, -5);
+            this.pictureBox2.Location = new System.Drawing.Point(502, -3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(57, 84);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -452,7 +452,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnTemizle.Image = ((System.Drawing.Image)(resources.GetObject("BtnTemizle.Image")));
             this.BtnTemizle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnTemizle.Location = new System.Drawing.Point(381, 355);
+            this.BtnTemizle.Location = new System.Drawing.Point(381, 357);
             this.BtnTemizle.Name = "BtnTemizle";
             this.BtnTemizle.Size = new System.Drawing.Size(116, 62);
             this.BtnTemizle.TabIndex = 11;
@@ -465,7 +465,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnListele.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.Image")));
             this.BtnListele.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnListele.Location = new System.Drawing.Point(381, 219);
+            this.BtnListele.Location = new System.Drawing.Point(381, 221);
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(116, 62);
             this.BtnListele.TabIndex = 9;
@@ -478,7 +478,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnGüncelle.Image = ((System.Drawing.Image)(resources.GetObject("BtnGüncelle.Image")));
             this.BtnGüncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGüncelle.Location = new System.Drawing.Point(381, 287);
+            this.BtnGüncelle.Location = new System.Drawing.Point(381, 289);
             this.BtnGüncelle.Name = "BtnGüncelle";
             this.BtnGüncelle.Size = new System.Drawing.Size(116, 62);
             this.BtnGüncelle.TabIndex = 10;
@@ -491,7 +491,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnSil.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.Image")));
             this.BtnSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSil.Location = new System.Drawing.Point(381, 151);
+            this.BtnSil.Location = new System.Drawing.Point(381, 153);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(116, 62);
             this.BtnSil.TabIndex = 8;
@@ -504,7 +504,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnKaydet.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.Image")));
             this.BtnKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKaydet.Location = new System.Drawing.Point(381, 85);
+            this.BtnKaydet.Location = new System.Drawing.Point(381, 87);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(116, 62);
             this.BtnKaydet.TabIndex = 7;

@@ -19,6 +19,7 @@ namespace ERPYAZİLİM.Formlar
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
         private void FrmDeparmanListesi_Load(object sender, EventArgs e)
         {
+           
             {
                 var degerler = from u in db.TBLDEPARTMAN
                                select new

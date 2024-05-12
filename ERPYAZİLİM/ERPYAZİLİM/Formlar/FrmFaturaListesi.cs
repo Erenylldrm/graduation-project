@@ -36,6 +36,7 @@ namespace ERPYAZİLİM.Formlar
         }
         private void FrmFaturaListesi_Load(object sender, EventArgs e)
         {
+          
             liste();
             /*comboBox1.DisplayMember = "CARI_ADI";
             comboBox1.ValueMember = "CARI_ID";

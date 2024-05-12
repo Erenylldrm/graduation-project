@@ -71,11 +71,11 @@ namespace ERPYAZİLİM.Formlar
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(579, 41);
+            this.dataGridView1.Location = new System.Drawing.Point(577, 41);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1341, 783);
+            this.dataGridView1.Size = new System.Drawing.Size(1348, 783);
             this.dataGridView1.TabIndex = 61;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -240,7 +240,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnKaydet.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.Image")));
             this.BtnKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKaydet.Location = new System.Drawing.Point(381, 246);
+            this.BtnKaydet.Location = new System.Drawing.Point(381, 249);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(116, 62);
             this.BtnKaydet.TabIndex = 6;
@@ -253,7 +253,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnSil.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.Image")));
             this.BtnSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSil.Location = new System.Drawing.Point(381, 315);
+            this.BtnSil.Location = new System.Drawing.Point(381, 317);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(116, 62);
             this.BtnSil.TabIndex = 7;
@@ -266,7 +266,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnGüncelle.Image = ((System.Drawing.Image)(resources.GetObject("BtnGüncelle.Image")));
             this.BtnGüncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGüncelle.Location = new System.Drawing.Point(381, 446);
+            this.BtnGüncelle.Location = new System.Drawing.Point(381, 448);
             this.BtnGüncelle.Name = "BtnGüncelle";
             this.BtnGüncelle.Size = new System.Drawing.Size(116, 62);
             this.BtnGüncelle.TabIndex = 9;
@@ -279,7 +279,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnListele.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.Image")));
             this.BtnListele.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnListele.Location = new System.Drawing.Point(381, 380);
+            this.BtnListele.Location = new System.Drawing.Point(381, 382);
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(116, 62);
             this.BtnListele.TabIndex = 8;

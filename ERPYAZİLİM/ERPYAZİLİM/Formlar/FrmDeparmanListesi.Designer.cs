@@ -260,7 +260,7 @@ namespace ERPYAZİLİM.Formlar
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1342, 608);
+            this.dataGridView1.Size = new System.Drawing.Size(1352, 625);
             this.dataGridView1.TabIndex = 51;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -285,7 +285,7 @@ namespace ERPYAZİLİM.Formlar
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 40);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(561, 778);
+            this.groupBox1.Size = new System.Drawing.Size(561, 795);
             this.groupBox1.TabIndex = 57;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DEPARTMAN İŞLEMLERİ";

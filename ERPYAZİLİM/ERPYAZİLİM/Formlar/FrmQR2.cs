@@ -24,6 +24,7 @@ namespace ERPYAZİLİM.Formlar
         VideoCaptureDevice vcd;
         private void FrmQR2_Load(object sender, EventArgs e)
         {
+           
             fico = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             foreach(FilterInfo f in fico)
             {

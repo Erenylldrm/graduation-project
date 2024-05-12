@@ -12,15 +12,67 @@ namespace ERPYAZİLİM.Formlar
 {
     public partial class FrmAnasayfaa : Form
     {
+        private Dictionary<Button, Rectangle> originalButtonBounds = new Dictionary<Button, Rectangle>();
+
         public FrmAnasayfaa()
         {
-            InitializeComponent();
+            InitializeComponent();          
+
+            // Tüm düğmeleri kontrol edin ve olayları atayın
+            foreach (Control control in Controls)
+            {
+                if (control is Button button)
+                {
+                    button.MouseEnter += button_MouseEnter;
+                    button.MouseLeave += button_MouseLeave;
+                }
+            }
+
+
         }
+
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
+        private void button_MouseEnter(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+
+            // Butonun orijinal boyutunu ve konumunu kaydetme
+            if (!originalButtonBounds.ContainsKey(button))
+                originalButtonBounds[button] = button.Bounds;
+
+            // Butonun boyutunu ve konumunu büyütme
+            button.Bounds = new Rectangle(
+                button.Bounds.X - (int)(button.Width * 0.05),
+                button.Bounds.Y - (int)(button.Height * 0.05),
+                (int)(button.Width * 1.1),
+                (int)(button.Height * 1.1)
+            );
+
+            // Butonun kenarlarına dolgu ekleyerek çizgi görünümünü engelleme
+            button.Padding = new Padding(3);
+
+            // İmleci el simgesi olarak değiştirme
+            Cursor = Cursors.Hand;
+        }
+
+        private void button_MouseLeave(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+
+            // Butonun boyutunu ve konumunu orijinal hale getirme
+            button.Bounds = originalButtonBounds[button];
+
+            // Dolgu (padding) sıfırlama
+            button.Padding = new Padding(0);
+
+            // İmleci varsayılan olarak geri getirme
+            Cursor = Cursors.Default;
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
+        
             Form mdiParent = this.MdiParent;
 
             // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
@@ -42,336 +94,222 @@ namespace ERPYAZİLİM.Formlar
 
         private void button4_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
             Form mdiParent = this.MdiParent;
-
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
+          
             if (mdiParent != null)
-            {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
+            {              
                 FrmÜrünListesi frm = new FrmÜrünListesi();
                 frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
                 frm.Show();
             }
             else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
+            {             
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
             Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
             if (mdiParent != null)
             {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
+         
                 Frmİstatistik frm = new Frmİstatistik();
                 frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
                 frm.Show();
             }
             else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
+            {             
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
             Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
             if (mdiParent != null)
             {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
                 FrmMarkaİstatistikleri frm = new FrmMarkaİstatistikleri();
                 frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
                 frm.Show();
             }
             else
             {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
             Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
             if (mdiParent != null)
             {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
                 FrmArizalıÜrünListesi frm = new FrmArizalıÜrünListesi();
                 frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
                 frm.Show();
             }
             else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
+            {  
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button10_Click(object sender, EventArgs e)
-        {
-            // Anasayfa formunun MDI Parent'ı alınır
+        { 
             Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
             if (mdiParent != null)
             {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
                 FrmArızalıÜrünDetayları frm = new FrmArızalıÜrünDetayları();
                 frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
                 frm.Show();
             }
             else
             {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
-            Form mdiParent = this.MdiParent;
-
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
-            if (mdiParent != null)
-            {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
-                FrmQR1 frm = new FrmQR1();
-                frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
-                frm.Show();
-            }
-            else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
-                MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
-            }
+            FrmQR1 frm = new FrmQR1();
+            frm.StartPosition = FormStartPosition.CenterScreen; // Formun merkezi ekranda açılması için StartPosition özelliğini ayarla
+            frm.Show();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
             Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
             if (mdiParent != null)
             {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
                 FrmMüşteriListesi frm = new FrmMüşteriListesi();
                 frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
                 frm.Show();
             }
             else
             {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button11_Click(object sender, EventArgs e)
-        {
-            // Anasayfa formunun MDI Parent'ı alınır
+        { 
             Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
             if (mdiParent != null)
             {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
                 FrmÜrünSatişListesi frm = new FrmÜrünSatişListesi();
                 frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
                 frm.Show();
             }
             else
             {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
-            // Anasayfa formunun MDI Parent'ı alınır
+        {  
             Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
             if (mdiParent != null)
             {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
                 FrmFaturaListesi frm = new FrmFaturaListesi();
                 frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
                 frm.Show();
             }
             else
             {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button14_Click(object sender, EventArgs e)
-        {
-            // Anasayfa formunun MDI Parent'ı alınır
+        {     
             Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
             if (mdiParent != null)
-            {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
+            {            
                 FrmFaturaSatışİşlemi frm = new FrmFaturaSatışİşlemi();
-                frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
+                frm.MdiParent = mdiParent;          
                 frm.Show();
             }
             else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
+            {              
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
-            Form mdiParent = this.MdiParent;
 
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
-            if (mdiParent != null)
-            {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
-                FrmBarcode frm = new FrmBarcode();
-                frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
-                frm.Show();
-            }
-            else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
-                MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
-            }
+            FrmBarcode frm = new FrmBarcode();
+            frm.StartPosition = FormStartPosition.CenterScreen; // Formun merkezi ekranda açılması için StartPosition özelliğini ayarla
+            frm.Show();
         }
 
         private void button17_Click(object sender, EventArgs e)
-        {
-            // Anasayfa formunun MDI Parent'ı alınır
+        {   
             Form mdiParent = this.MdiParent;
-
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
+         
             if (mdiParent != null)
-            {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
+            {     
                 FrmPersonelListesi frm = new FrmPersonelListesi();
-                frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
+                frm.MdiParent = mdiParent;             
                 frm.Show();
             }
             else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
+            {                
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button15_Click(object sender, EventArgs e)
-        {
-            // Anasayfa formunun MDI Parent'ı alınır
+        {        
             Form mdiParent = this.MdiParent;
-
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
+      
             if (mdiParent != null)
-            {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
+            {            
                 FrmDeparmanListesi frm = new FrmDeparmanListesi();
-                frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
+                frm.MdiParent = mdiParent;           
                 frm.Show();
             }
             else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
+            {             
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button12_Click(object sender, EventArgs e)
-        {
-            // Anasayfa formunun MDI Parent'ı alınır
+        {    
             Form mdiParent = this.MdiParent;
-
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
+          
             if (mdiParent != null)
-            {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
+            {          
                 FrmAjanda frm = new FrmAjanda();
-                frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
+                frm.MdiParent = mdiParent;    
                 frm.Show();
             }
             else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
+            {           
                 MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
             }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            // Anasayfa formunun MDI Parent'ı alınır
-            Form mdiParent = this.MdiParent;
-
-            // Anasayfa formunun MDI Parent'ı null değilse (MDI formu içinde ise)
-            if (mdiParent != null)
-            {
-                // Yeni formun oluşturulması ve MDI Parent olarak atanması
-                FrmYeniMail frm = new FrmYeniMail();
-                frm.MdiParent = mdiParent;
-
-                // Yeni formun gösterilmesi
-                frm.Show();
-            }
-            else
-            {
-                // MDI formu içinde değilse, hata mesajı gösterilebilir veya isteğe göre farklı bir işlem yapılabilir
-                MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
-            }
+            FrmYeniMail frm = new FrmYeniMail();
+            frm.StartPosition = FormStartPosition.CenterScreen; // Formun merkezi ekranda açılması için StartPosition özelliğini ayarla
+            frm.Show();
         }
 
         private void FrmAnasayfaa_Load(object sender, EventArgs e)
         {
+            
             dataGridView1.DataSource = (from x in db.TBLURUN
                                         where x.STOK < 30 // Yalnızca stok sayısı 30'dan küçük olanları seç
                                         select new
@@ -411,6 +349,22 @@ namespace ERPYAZİLİM.Formlar
                 }
             }
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form mdiParent = this.MdiParent;
+
+            if (mdiParent != null)
+            {
+                FrmRehber frm = new FrmRehber();
+                frm.MdiParent = mdiParent;
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Bu form MDI çerçevesi içinde değil.");
+            }
         }
     }
 }

@@ -21,7 +21,7 @@ namespace ERPYAZİLİM.Formlar
 
         private void FrmYeniMail_Load(object sender, EventArgs e)
         {
-
+         
         }
        // MailMessage eposta = new MailMessage();
        /* void MailGonder() //2

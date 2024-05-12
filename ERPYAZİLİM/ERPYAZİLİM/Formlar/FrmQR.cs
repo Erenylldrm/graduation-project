@@ -23,6 +23,7 @@ namespace ERPYAZİLİM.Formlar
 
         private void FrmQR_Load(object sender, EventArgs e)
         {
+        
             // FrmQR yüklendiğinde burada yapılacak işlemleri ekleyebilirsiniz.
         }
 

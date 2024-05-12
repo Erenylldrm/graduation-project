@@ -19,7 +19,7 @@ namespace ERPYAZİLİM
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
+            
         }
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
         private void button1_Click(object sender, EventArgs e)

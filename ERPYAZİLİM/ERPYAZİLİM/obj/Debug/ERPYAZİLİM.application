@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <assemblyIdentity name="ERPYAZİLİM.application" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
-  <description asmv2:publisher="ERPYAZİLİM" asmv2:product="ERPYAZİLİM" xmlns="urn:schemas-microsoft-com:asm.v1" />
-  <deployment install="true" mapFileExtensions="true" />
+  <description asmv2:publisher="M.Eren Yıldırım" co.v1:suiteName="MEY Ticari Otomasyon" asmv2:product="MEY Ticari Otomasyon" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <deployment install="true" mapFileExtensions="true" co.v1:createDesktopShortcut="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ERPYAZİLİM.exe.manifest" size="13799">
+    <dependentAssembly dependencyType="install" codebase="ERPYAZİLİM.exe.manifest" size="13639">
       <assemblyIdentity name="ERPYAZİLİM.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iY2nG6hKWVct9wW1jLSNx4v2Hmj96pKK0kmGp+KxnZg=</dsig:DigestValue>
+        <dsig:DigestValue>C4muk72JMVPEIiSLd+2dSCoOZF8wYZdaPhMLzBt2158=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

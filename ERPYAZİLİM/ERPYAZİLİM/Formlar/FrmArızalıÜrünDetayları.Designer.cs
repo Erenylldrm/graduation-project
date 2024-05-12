@@ -102,7 +102,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnSil.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.Image")));
             this.BtnSil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnSil.Location = new System.Drawing.Point(370, 306);
+            this.BtnSil.Location = new System.Drawing.Point(369, 282);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(116, 62);
             this.BtnSil.TabIndex = 95;
@@ -115,7 +115,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnKaydet.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.Image")));
             this.BtnKaydet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnKaydet.Location = new System.Drawing.Point(369, 179);
+            this.BtnKaydet.Location = new System.Drawing.Point(370, 145);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(116, 62);
             this.BtnKaydet.TabIndex = 94;
@@ -128,7 +128,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnListele.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.Image")));
             this.BtnListele.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnListele.Location = new System.Drawing.Point(369, 243);
+            this.BtnListele.Location = new System.Drawing.Point(369, 214);
             this.BtnListele.Name = "BtnListele";
             this.BtnListele.Size = new System.Drawing.Size(116, 62);
             this.BtnListele.TabIndex = 97;
@@ -142,17 +142,18 @@ namespace ERPYAZİLİM.Formlar
             this.TxtTakıpId.Enabled = false;
             this.TxtTakıpId.Location = new System.Drawing.Point(121, 145);
             this.TxtTakıpId.Name = "TxtTakıpId";
-            this.TxtTakıpId.Size = new System.Drawing.Size(113, 25);
+            this.TxtTakıpId.Size = new System.Drawing.Size(189, 25);
             this.TxtTakıpId.TabIndex = 20;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(117, 120);
+            this.label5.Location = new System.Drawing.Point(123, 120);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(27, 19);
             this.label5.TabIndex = 19;
             this.label5.Text = "ID:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 
@@ -185,7 +186,7 @@ namespace ERPYAZİLİM.Formlar
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 271);
+            this.label2.Location = new System.Drawing.Point(123, 270);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 19);
             this.label2.TabIndex = 15;
@@ -194,7 +195,7 @@ namespace ERPYAZİLİM.Formlar
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(121, 193);
+            this.label1.Location = new System.Drawing.Point(123, 192);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 19);
             this.label1.TabIndex = 14;
@@ -242,7 +243,7 @@ namespace ERPYAZİLİM.Formlar
             // 
             this.BtnGüncelle.Image = ((System.Drawing.Image)(resources.GetObject("BtnGüncelle.Image")));
             this.BtnGüncelle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnGüncelle.Location = new System.Drawing.Point(370, 372);
+            this.BtnGüncelle.Location = new System.Drawing.Point(370, 351);
             this.BtnGüncelle.Name = "BtnGüncelle";
             this.BtnGüncelle.Size = new System.Drawing.Size(116, 62);
             this.BtnGüncelle.TabIndex = 96;
@@ -267,7 +268,7 @@ namespace ERPYAZİLİM.Formlar
             this.TxtSeriNo.Location = new System.Drawing.Point(121, 214);
             this.TxtSeriNo.Mask = "AAAAA";
             this.TxtSeriNo.Name = "TxtSeriNo";
-            this.TxtSeriNo.Size = new System.Drawing.Size(113, 25);
+            this.TxtSeriNo.Size = new System.Drawing.Size(189, 25);
             this.TxtSeriNo.TabIndex = 1;
             this.TxtSeriNo.Click += new System.EventHandler(this.TxtSeriNo_Click);
             // 
@@ -276,7 +277,7 @@ namespace ERPYAZİLİM.Formlar
             this.TxtTarih.Location = new System.Drawing.Point(121, 292);
             this.TxtTarih.Mask = "00/00/0000";
             this.TxtTarih.Name = "TxtTarih";
-            this.TxtTarih.Size = new System.Drawing.Size(113, 25);
+            this.TxtTarih.Size = new System.Drawing.Size(189, 25);
             this.TxtTarih.TabIndex = 2;
             this.TxtTarih.ValidatingType = typeof(System.DateTime);
             this.TxtTarih.Click += new System.EventHandler(this.TxtTarih_Click);

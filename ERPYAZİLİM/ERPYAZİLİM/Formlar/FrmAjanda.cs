@@ -19,6 +19,7 @@ namespace ERPYAZİLİM.Formlar
         Db_TıcarıOtomasyonEntities1 db = new Db_TıcarıOtomasyonEntities1();
         private void FrmAjanda_Load(object sender, EventArgs e)
         {
+            
             dataGridView1.DataSource = db.TBLNOTLARIM.Where(x => x.DURUM == false).ToList();
             dataGridView2.DataSource = db.TBLNOTLARIM.Where(y => y.DURUM == true).ToList();
         }

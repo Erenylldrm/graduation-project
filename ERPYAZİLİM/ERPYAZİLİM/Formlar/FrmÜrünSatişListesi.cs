@@ -35,6 +35,7 @@ namespace ERPYAZİLİM.Formlar
         }
         private void FrmÜrünSatişListesi_Load(object sender, EventArgs e)
         {
+           
             metot1();
           
             comboBox2.DisplayMember = "AD"; // Görüntülenen metin

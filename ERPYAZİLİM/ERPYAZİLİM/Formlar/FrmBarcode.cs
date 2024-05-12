@@ -16,6 +16,10 @@ namespace ERPYAZİLİM.Formlar
         {
             InitializeComponent();
         }
+        private void FrmBarcode_Load(object sender, EventArgs e)
+        {
+            
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -34,10 +38,7 @@ namespace ERPYAZİLİM.Formlar
             frmQR2.Show();
         }
 
-        private void FrmBarcode_Load(object sender, EventArgs e)
-        {
-
-        }
+  
 
         private void button3_Click(object sender, EventArgs e)
         {

@@ -105,9 +105,9 @@ namespace ERPYAZİLİM.Formlar
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(124, 186);
+            this.button3.Location = new System.Drawing.Point(45, 186);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 55);
+            this.button3.Size = new System.Drawing.Size(289, 55);
             this.button3.TabIndex = 81;
             this.button3.Text = "KAYDET";
             this.button3.UseVisualStyleBackColor = true;

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace ERPYAZİLİM
 {
@@ -18,8 +19,7 @@ namespace ERPYAZİLİM
             this.Text = "";
 
         }
-
-
+             
         private void TumFormlariKapat()
         {
             List<Form> kopyaFormlar = new List<Form>(Application.OpenForms.Cast<Form>());
@@ -42,6 +42,8 @@ namespace ERPYAZİLİM
         public string kullanıcıyetki;
         private void Form1_Load(object sender, EventArgs e)
         {
+          
+
             // Kullanıcı yetki kategorisi 1 ise belirli ribbontabları gizle
             if (kullanıcıyetki == "1")
             {
@@ -49,6 +51,8 @@ namespace ERPYAZİLİM
                 ribbonTab4.Visible = false;
                 ribbonTab5.Visible = false;
                 ribbonTab7.Visible = false;
+                
+                
             }
 
             // Kullanıcı yetki kategorisi 1 ise belirli ribbontabları gizle
