@@ -68,7 +68,7 @@ namespace ERPYAZİLİM.Formlar // GÜNCELLEME BUTONUNDA SORUN VAR ÇÖZ.
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
           
         }
@@ -91,7 +91,7 @@ namespace ERPYAZİLİM.Formlar // GÜNCELLEME BUTONUNDA SORUN VAR ÇÖZ.
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -113,7 +113,7 @@ namespace ERPYAZİLİM.Formlar // GÜNCELLEME BUTONUNDA SORUN VAR ÇÖZ.
              }
              catch (Exception ex)
              {
-                 MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                 MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
              }
         
         }
@@ -195,11 +195,16 @@ namespace ERPYAZİLİM.Formlar // GÜNCELLEME BUTONUNDA SORUN VAR ÇÖZ.
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

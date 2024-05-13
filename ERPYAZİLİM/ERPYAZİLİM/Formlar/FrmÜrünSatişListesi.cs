@@ -80,7 +80,7 @@ namespace ERPYAZİLİM.Formlar
                 if (comboBox2.SelectedItem == null || comboBox3.SelectedItem == null || comboBox4.SelectedItem == null ||
                     string.IsNullOrEmpty(TxtTarih.Text) || string.IsNullOrEmpty(TxtAdet.Text) || string.IsNullOrEmpty(TxtFiyat.Text))
                 {
-                    MessageBox.Show("Lütfen tüm alanları doldurun.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Lütfen tüm alanları doldurun.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
  
@@ -108,7 +108,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
@@ -132,12 +132,12 @@ namespace ERPYAZİLİM.Formlar
                     }
                     else
                     {
-                        MessageBox.Show("Seçilen kayıt bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Seçilen kayıt bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             
 
@@ -191,7 +191,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -232,17 +232,17 @@ namespace ERPYAZİLİM.Formlar
                     }
                     else
                     {
-                        MessageBox.Show("Belirtilen ID'ye sahip ürün hareketi bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Belirtilen ID'ye sahip ürün hareketi bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Lütfen güncellemek için bir ürün hareketi seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Lütfen güncellemek için bir ürün hareketi seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 

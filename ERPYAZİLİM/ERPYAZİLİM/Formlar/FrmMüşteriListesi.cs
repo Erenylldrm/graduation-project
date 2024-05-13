@@ -115,7 +115,7 @@ namespace ERPYAZİLİM.Formlar
         {
             if (string.IsNullOrWhiteSpace(TxtAd.Text) || string.IsNullOrWhiteSpace(TxtSoyad.Text) || string.IsNullOrWhiteSpace(TxtTelefon.Text) || string.IsNullOrWhiteSpace(TxtMail.Text) || string.IsNullOrWhiteSpace(comboBox1.Text) || string.IsNullOrWhiteSpace(comboBox2.Text))
             {
-                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -134,7 +134,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         /*{
@@ -178,12 +178,12 @@ namespace ERPYAZİLİM.Formlar
                 }
                 else
                 {
-                    MessageBox.Show("Belirtilen ID'ye sahip müşteri bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Belirtilen ID'ye sahip müşteri bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen bir satır seçiniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen bir satır seçiniz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -211,12 +211,12 @@ namespace ERPYAZİLİM.Formlar
                 }
                 else
                 {
-                    MessageBox.Show("Belirtilen ID'ye sahip müşteri bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Belirtilen ID'ye sahip müşteri bulunamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen güncellemek için bir müşteri seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen güncellemek için bir müşteri seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -298,7 +298,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

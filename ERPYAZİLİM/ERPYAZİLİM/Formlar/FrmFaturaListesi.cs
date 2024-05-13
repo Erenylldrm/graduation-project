@@ -71,28 +71,28 @@ namespace ERPYAZİLİM.Formlar
         {
             if (string.IsNullOrWhiteSpace(TxtSeri.Text) || string.IsNullOrWhiteSpace(TxtSira.Text) || string.IsNullOrWhiteSpace(TxtTarih.Text) || string.IsNullOrWhiteSpace(TxtSaat.Text) || string.IsNullOrWhiteSpace(TxtVergiDairesi.Text) || comboBox1.SelectedItem == null || comboBox2.SelectedItem == null)
             {
-                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             DateTime tarih;
             if (!DateTime.TryParse(TxtTarih.Text, out tarih))
             {
-                MessageBox.Show("Lütfen geçerli bir tarih formatı giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen geçerli bir tarih formatı giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             int cariId;
             if (!int.TryParse(comboBox1.SelectedValue.ToString(), out cariId))
             {
-                MessageBox.Show("Geçerli bir müşteri seçiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Geçerli bir müşteri seçiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             short personelId;
             if (!short.TryParse(comboBox2.SelectedValue.ToString(), out personelId))
             {
-                MessageBox.Show("Geçerli bir personel seçiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Geçerli bir personel seçiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -112,7 +112,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         /*{
@@ -175,7 +175,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

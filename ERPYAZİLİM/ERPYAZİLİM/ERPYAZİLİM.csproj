@@ -209,6 +209,12 @@
     <Compile Include="Formlar\FrmKategoriListesi.Designer.cs">
       <DependentUpon>FrmKategoriListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formlar\FrmKullanıcıEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\FrmKullanıcıEkle.Designer.cs">
+      <DependentUpon>FrmKullanıcıEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formlar\FrmMarkaİstatistikleri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -431,6 +437,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmKategoriListesi.resx">
       <DependentUpon>FrmKategoriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\FrmKullanıcıEkle.resx">
+      <DependentUpon>FrmKullanıcıEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formlar\FrmMarkaİstatistikleri.resx">
       <DependentUpon>FrmMarkaİstatistikleri.cs</DependentUpon>

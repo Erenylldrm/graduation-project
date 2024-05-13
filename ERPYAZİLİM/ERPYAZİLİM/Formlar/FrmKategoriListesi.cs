@@ -41,7 +41,7 @@ namespace ERPYAZİLİM.Formlar
             }
             else
             {
-                MessageBox.Show("Kategori Adı Boş Geçilemez ve Kategori adı 30 karakterden uzun olamaz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Kategori Adı Boş Geçilemez ve Kategori adı 30 karakterden uzun olamaz", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -50,7 +50,7 @@ namespace ERPYAZİLİM.Formlar
             int id;
             if (!int.TryParse(TxtID.Text, out id))
             {
-                MessageBox.Show("Lütfen geçerli bir ID girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen geçerli bir ID girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -58,7 +58,7 @@ namespace ERPYAZİLİM.Formlar
 
             if (deger == null)
             {
-                MessageBox.Show("Bu ID'ye sahip bir kategori bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bu ID'ye sahip bir kategori bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -95,14 +95,14 @@ namespace ERPYAZİLİM.Formlar
             int id;
             if (!int.TryParse(TxtID.Text, out id))
             {
-                MessageBox.Show("Lütfen geçerli bir ID girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen geçerli bir ID girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             var deger = db.TBLKATEGORI.Find(id);
             if (deger == null)
             {
-                MessageBox.Show("Bu ID'ye sahip bir kategori bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bu ID'ye sahip bir kategori bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -182,7 +182,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

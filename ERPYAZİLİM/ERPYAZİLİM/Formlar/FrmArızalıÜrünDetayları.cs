@@ -86,12 +86,12 @@ namespace ERPYAZİLİM.Formlar
                 }
                 else
                 {
-                    MessageBox.Show("Belirtilen ID ile ürün bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Belirtilen ID ile ürün bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen bir ürün seçin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen bir ürün seçin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -110,7 +110,7 @@ namespace ERPYAZİLİM.Formlar
             DateTime tarih;
             if (!DateTime.TryParse(TxtTarih.Text, out tarih))
             {
-                MessageBox.Show("Lütfen geçerli bir tarih formatı girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen geçerli bir tarih formatı girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             yeniUrun.TARIH = tarih;
@@ -160,12 +160,12 @@ namespace ERPYAZİLİM.Formlar
                 }
                 else
                 {
-                    MessageBox.Show("Belirtilen ID ile ürün bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Belirtilen ID ile ürün bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
             {
-                MessageBox.Show("Lütfen bir ürün seçin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen bir ürün seçin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -201,7 +201,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

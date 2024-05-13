@@ -47,10 +47,10 @@ namespace ERPYAZİLİM
             // Kullanıcı yetki kategorisi 1 ise belirli ribbontabları gizle
             if (kullanıcıyetki == "1")
             {
-                ribbonTab3.Visible = false;
-                ribbonTab4.Visible = false;
-                ribbonTab5.Visible = false;
+                ribbonTab1.Visible = false;
+                ribbonTab6.Visible = false;
                 ribbonTab7.Visible = false;
+                ribbonTab8.Visible = false;
                 
                 
             }
@@ -58,26 +58,23 @@ namespace ERPYAZİLİM
             // Kullanıcı yetki kategorisi 1 ise belirli ribbontabları gizle
             if (kullanıcıyetki == "2")
             {
-                ribbonTab2.Visible = false;
-                ribbonTab4.Visible = false;
+                ribbonTab1.Visible = false;
                 ribbonTab5.Visible = false;
                 ribbonTab7.Visible = false;
+                ribbonTab8.Visible = false;
             }
 
             if (kullanıcıyetki == "3")
             {
-                ribbonTab2.Visible = false;
-                ribbonTab3.Visible = false;
-                ribbonTab5.Visible = false;
+                ribbonTab1.Visible = false;             
                 ribbonTab7.Visible = false;
+                ribbonTab8.Visible = false;
             }
 
             if (kullanıcıyetki == "4")
             {
-                ribbonTab2.Visible = false;
-                ribbonTab3.Visible = false;
-                ribbonTab4.Visible = false;
-                ribbonTab7.Visible = false;
+                ribbonTab1.Visible = false;
+                ribbonTab8.Visible = false;
             }
 
             //TumFormlariKapat();
@@ -256,6 +253,12 @@ namespace ERPYAZİLİM
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ribbonButton3_Click(object sender, EventArgs e)
+        {
+            TumFormlariKapat();
+            FormAc(new Formlar.FrmKullanıcıEkle());
         }
     }
 }

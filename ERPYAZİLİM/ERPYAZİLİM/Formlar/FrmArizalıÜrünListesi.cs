@@ -121,14 +121,14 @@ namespace ERPYAZİLİM.Formlar
 
             if (selectedPersonel == null)
             {
-                MessageBox.Show("Lütfen bir personel seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen bir personel seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             DateTime gelisTarih;
             if (!DateTime.TryParse(TxtTarih.Text, out gelisTarih))
             {
-                MessageBox.Show("Lütfen geçerli bir tarih formatı girin (GG.AA.YYYY)", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen geçerli bir tarih formatı girin (GG.AA.YYYY)", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -222,13 +222,13 @@ namespace ERPYAZİLİM.Formlar
 
                     if (selectedCari == null)
                     {
-                        MessageBox.Show("Lütfen bir müşteri seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Lütfen bir müşteri seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
 
                     if (selectedPersonel == null)
                     {
-                        MessageBox.Show("Lütfen bir personel seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Lütfen bir personel seçin", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
 
@@ -244,7 +244,7 @@ namespace ERPYAZİLİM.Formlar
                 }
                 else
                 {
-                    MessageBox.Show("Güncelleme işlemi gerçekleştirilemedi: Seçili öğe bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Güncelleme işlemi gerçekleştirilemedi: Seçili öğe bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -270,7 +270,7 @@ namespace ERPYAZİLİM.Formlar
                 }
                 else
                 {
-                    MessageBox.Show("Silme işlemi gerçekleştirilemedi: Seçili öğe bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Silme işlemi gerçekleştirilemedi: Seçili öğe bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -352,7 +352,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

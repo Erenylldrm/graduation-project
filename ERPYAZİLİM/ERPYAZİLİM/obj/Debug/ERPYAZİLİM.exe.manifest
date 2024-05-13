@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ERPYAZİLİM.exe" size="2378672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ERPYAZİLİM.exe" size="2402224">
       <assemblyIdentity name="ERPYAZİLİM" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MAM9zwSAZad/kHa0os/+rmtg6FWXpRK/jfbqaTOSvxY=</dsig:DigestValue>
+        <dsig:DigestValue>lk6etlOpdK+9gwPahNmqSmGk7q3hljP2Egc7Hm+osiY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

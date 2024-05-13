@@ -61,3 +61,4 @@ C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.FrmLogin1.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmAnasayfaa.resources
 C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.FrmMainMenu.resources
+C:\Users\engineer\source\repos\ERPYAZİLİM\ERPYAZİLİM\obj\Debug\ERPYAZİLİM.Formlar.FrmKullanıcıEkle.resources

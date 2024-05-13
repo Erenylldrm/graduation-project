@@ -56,31 +56,42 @@ namespace ERPYAZİLİM.Formlar
 
         private void BtnGönder_Click(object sender, EventArgs e)
         {
-                //#1
-               SmtpClient sc = new SmtpClient();
-               sc.Port = 587;
-               sc.Host = "smtp.gmail.com";
-               sc.EnableSsl = true;
+            //#1
+            try
+            {
+                SmtpClient sc = new SmtpClient();
+                sc.Port = 587;
+                sc.Host = "smtp.gmail.com";
+                sc.EnableSsl = true;
 
+                string Alici = TxtAlici.Text;
+                string Konu = TxtKonu.Text;
+                string İcerik = Txtİcerik.Text;
 
-               string Alici = TxtAlici.Text;
-               string Konu = TxtKonu.Text;
-               string İcerik = Txtİcerik.Text;
+                if (string.IsNullOrWhiteSpace(Alici) || string.IsNullOrWhiteSpace(Konu) || string.IsNullOrWhiteSpace(İcerik))
+                {
+                    MessageBox.Show("Lütfen tüm alanları doldurunuz.");
+                    return;
+                }
 
-               sc.Credentials = new NetworkCredential("erpyazilim3@gmail.com", "vrpfmholjcivdxqt");
-               MailMessage mail = new MailMessage();
-               mail.From = new MailAddress("erpyazilim3@gmail.com", " ERP YAZİLİM TİCARİ OTOMASYON ");
-               mail.To.Add(Alici);
-               mail.Subject = Konu;
-               mail.IsBodyHtml = true;
-               mail.Body = İcerik;
-               if(dosyaYolu != null)
-               {
-                   mail.Attachments.Add(new Attachment(dosyaYolu));
-
-               }
-               sc.Send(mail); // Gmail izin vermek gerekiyor
-               MessageBox.Show("Mail Gönderildi");
+                sc.Credentials = new NetworkCredential("erpyazilim3@gmail.com", "vrpfmholjcivdxqt");
+                MailMessage mail = new MailMessage();
+                mail.From = new MailAddress("erpyazilim3@gmail.com", "MEY TİCARİ OTOMASYON");
+                mail.To.Add(Alici);
+                mail.Subject = Konu;
+                mail.IsBodyHtml = true;
+                mail.Body = İcerik;
+                if (dosyaYolu != null)
+                {
+                    mail.Attachments.Add(new Attachment(dosyaYolu));
+                }
+                sc.Send(mail);
+                MessageBox.Show("Mail Gönderildi");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Mail gönderirken bir hata oluştu: " + ex.Message);
+            }
 
 
             /* MailMessage mail = new MailMessage();

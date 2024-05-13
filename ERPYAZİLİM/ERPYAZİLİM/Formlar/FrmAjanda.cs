@@ -43,14 +43,14 @@ namespace ERPYAZİLİM.Formlar
         {
             if (string.IsNullOrWhiteSpace(TxtBaslik.Text) || string.IsNullOrWhiteSpace(Txtİcerik.Text) || string.IsNullOrWhiteSpace(TxtTarih.Text))
             {
-                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen tüm alanları doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             DateTime tarih;
             if (!DateTime.TryParse(TxtTarih.Text, out tarih))
             {
-                MessageBox.Show("Geçerli bir tarih formatı giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Geçerli bir tarih formatı giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -67,7 +67,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         /*{
@@ -102,7 +102,7 @@ namespace ERPYAZİLİM.Formlar
             }
             else
             {
-                MessageBox.Show("Lütfen geçerli bir ID giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lütfen geçerli bir ID giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -194,7 +194,7 @@ namespace ERPYAZİLİM.Formlar
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hata: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

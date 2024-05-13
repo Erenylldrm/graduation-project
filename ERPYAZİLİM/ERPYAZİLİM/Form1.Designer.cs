@@ -77,6 +77,9 @@ namespace ERPYAZİLİM
             this.ribbonTab6 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel11 = new System.Windows.Forms.RibbonPanel();
             this.BtnAjanda = new System.Windows.Forms.RibbonButton();
+            this.ribbonTab8 = new System.Windows.Forms.RibbonTab();
+            this.ribbonPanel17 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonButton3 = new System.Windows.Forms.RibbonButton();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -110,6 +113,7 @@ namespace ERPYAZİLİM
             this.ribbon1.Tabs.Add(this.ribbonTab5);
             this.ribbon1.Tabs.Add(this.ribbonTab7);
             this.ribbon1.Tabs.Add(this.ribbonTab6);
+            this.ribbon1.Tabs.Add(this.ribbonTab8);
             this.ribbon1.Text = "ribbon1";
             this.ribbon1.Click += new System.EventHandler(this.ribbon1_Click);
             // 
@@ -416,6 +420,7 @@ namespace ERPYAZİLİM
             this.ribbonPanel24.Items.Add(this.BtnGelenMesajlar);
             this.ribbonPanel24.Name = "ribbonPanel24";
             this.ribbonPanel24.Text = "--------------------";
+            this.ribbonPanel24.Visible = false;
             // 
             // BtnGelenMesajlar
             // 
@@ -461,6 +466,27 @@ namespace ERPYAZİLİM
             this.BtnAjanda.SmallImage = ((System.Drawing.Image)(resources.GetObject("BtnAjanda.SmallImage")));
             this.BtnAjanda.Text = "AJANDA";
             this.BtnAjanda.Click += new System.EventHandler(this.BtnAjanda_Click);
+            // 
+            // ribbonTab8
+            // 
+            this.ribbonTab8.Name = "ribbonTab8";
+            this.ribbonTab8.Panels.Add(this.ribbonPanel17);
+            this.ribbonTab8.Text = "KULLANICI EKLE";
+            // 
+            // ribbonPanel17
+            // 
+            this.ribbonPanel17.Items.Add(this.ribbonButton3);
+            this.ribbonPanel17.Name = "ribbonPanel17";
+            this.ribbonPanel17.Text = "--------------------";
+            // 
+            // ribbonButton3
+            // 
+            this.ribbonButton3.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.Image")));
+            this.ribbonButton3.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.LargeImage")));
+            this.ribbonButton3.Name = "ribbonButton3";
+            this.ribbonButton3.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.SmallImage")));
+            this.ribbonButton3.Text = "Kullanıcı Ekle";
+            this.ribbonButton3.Click += new System.EventHandler(this.ribbonButton3_Click);
             // 
             // button9
             // 
@@ -591,6 +617,9 @@ namespace ERPYAZİLİM
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.RibbonTab ribbonTab8;
+        private System.Windows.Forms.RibbonPanel ribbonPanel17;
+        private System.Windows.Forms.RibbonButton ribbonButton3;
     }
 }
 

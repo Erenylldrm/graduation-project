@@ -1184,4 +1184,36 @@
         dAAAEnQB3mYfeAAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="ribbonButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAdJJREFUaEPt
+        mI1NwzAQhTMCIzACI5gJYAPYgG5AN6AbZATYADZoB0iUEdoN4M6+SsG+kPji9k7Cn/TUSHVfnv9rN5VK
+        pSLDDXeN618b133C5wD6JuHzG3x/SyWNggFD+HPwKR19ZU0SegECssE5YVnoNUsV8j2RVYlYLXjckJsi
+        y4bTnHbkpkToDS6YQJqLgOu3aSCxtuSqgOu+mEBCgZca6yZ5rCO5KsAHkksNLswaqeH6QxJGrgO5KoDr
+        Px9KIsW9xA2OCSQUeKlRZlcngZcarj+lgcQ6kasCZTfED3JVwA2PfCiJwEuVIhNec6KPWbefKO4fMauG
+        mPaQihFNfM1/vFPgcTVviEFZC0dcjlAZLjQjq5U4w4ZmZB4uNCfzcKE5mcb1myTwtDb0K4OEyb7kjAJl
+        LE32++EBAqUbWrjvwgqNl2N8xgqk91fogV5Xw7f48ASB3kcBUS9UIh/87W8v8MZ3XKLHQgu30Qsj4SEr
+        47bQe84ezPBeuNANpL81Z18ypfbPYeKH41yjJJL3uCf/hbH2odV9y8MzW2apWkqVSd5Sei1lLtlhGeWM
+        DChnEbDZG6TumVIuoOilQmnlnGHWT8xLak8pF8Ab2FGlUvmvNM0PWcCXPvbRUWwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ribbonButton3.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAdJJREFUaEPt
+        mI1NwzAQhTMCIzACI5gJYAPYgG5AN6AbZATYADZoB0iUEdoN4M6+SsG+kPji9k7Cn/TUSHVfnv9rN5VK
+        pSLDDXeN618b133C5wD6JuHzG3x/SyWNggFD+HPwKR19ZU0SegECssE5YVnoNUsV8j2RVYlYLXjckJsi
+        y4bTnHbkpkToDS6YQJqLgOu3aSCxtuSqgOu+mEBCgZca6yZ5rCO5KsAHkksNLswaqeH6QxJGrgO5KoDr
+        Px9KIsW9xA2OCSQUeKlRZlcngZcarj+lgcQ6kasCZTfED3JVwA2PfCiJwEuVIhNec6KPWbefKO4fMauG
+        mPaQihFNfM1/vFPgcTVviEFZC0dcjlAZLjQjq5U4w4ZmZB4uNCfzcKE5mcb1myTwtDb0K4OEyb7kjAJl
+        LE32++EBAqUbWrjvwgqNl2N8xgqk91fogV5Xw7f48ASB3kcBUS9UIh/87W8v8MZ3XKLHQgu30Qsj4SEr
+        47bQe84ezPBeuNANpL81Z18ypfbPYeKH41yjJJL3uCf/hbH2odV9y8MzW2apWkqVSd5Sei1lLtlhGeWM
+        DChnEbDZG6TumVIuoOilQmnlnGHWT8xLak8pF8Ab2FGlUvmvNM0PWcCXPvbRUWwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ribbonButton3.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        dAAAEnQB3mYfeAAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
+</value>
+  </data>
 </root>
