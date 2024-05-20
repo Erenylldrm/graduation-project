@@ -134,7 +134,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lk6etlOpdK+9gwPahNmqSmGk7q3hljP2Egc7Hm+osiY=</dsig:DigestValue>
+        <dsig:DigestValue>kQ9DGODS2FdeLzEbzWsuKd8GNUfetVLxyI9dC7QdpOk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -210,13 +210,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ERPYAZİLİM.exe.config" size="1993">
+  <file name="ERPYAZİLİM.exe.config" size="2803">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>S8b0oEi2QC2tRfI3U0Zpl2tmwpGq9xSWkl0AYMQA5yg=</dsig:DigestValue>
+      <dsig:DigestValue>EommbbwdHI7xeuTx1Xew7iyVNhWgeaTtkSuLa24nqUQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Logo.ico" size="256670">
