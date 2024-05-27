@@ -1,0 +1,21 @@
+SQL ismi = DBTICARIOTOMASYON
+visual studio ismi = TicariOtomasyon
+projenin yolu = C:\Users\engineer\source\repos
+sql sunucu adım = Acer\SQLEXPRESS
+C:\Users\engineer\Documents\script.sql
+
+    SqlConnection baglanti = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;
+                                            AttachDbFilename=|DataDirectory|\DBTICARIOTOMASYON.mdf;
+                                            Integrated Security=True;
+                                            Connect Timeout=30;
+                                            MultipleActiveResultSets=True");
+            baglanti.Open();
+
+
+sql connection değişiklik yapılacak sayfalar
+FrmArizalıÜrünListesi
+FrmMarkaİstatistikleri
+FrmMüşteriListesi
+FrmPersonelListesi
+
+SQL BAĞLAMA VİDEOSU : https://www.youtube.com/watch?app=desktop&v=rzr_u0QDKcM

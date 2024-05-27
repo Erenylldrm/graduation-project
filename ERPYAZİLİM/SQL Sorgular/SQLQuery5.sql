@@ -1,0 +1,5 @@
+--CREATE PROCEDURE maksurunmarka
+--AS
+--SELECT TOP 1 MARKA FROM TBLURUN GROUP BY MARKA
+--ORDER BY COUNT(*) DESC
+exec maksurunmarka
